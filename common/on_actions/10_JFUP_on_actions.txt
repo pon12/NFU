@@ -1,0 +1,15 @@
+on_actions = {
+on_startup = {
+effect = {
+YUG = {remove_ideas = ai_limiter} 
+YUG = {add_timed_idea = {idea = JFU_no_tradeback  days = 1277}}
+YUG = {add_timed_idea = {idea = peace_training  days = 1277}}
+YUG = {add_ideas = NO_SF_CAP}
+YUG = {add_ideas = NO_GRINDING}
+}
+}
+
+
+
+
+}
