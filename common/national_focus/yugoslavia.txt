@@ -83,10 +83,34 @@ is_ai = no
 
 
 		completion_reward = {
-			add_political_power = 100
+		
+			add_political_power = 150
 			add_ideas = king_peter_1
+			country_lock_all_division_template = no
+			hidden_effect = {
 			remove_ideas = anti_german_military
-		}
+			send_embargo = ENG
+			send_embargo = CAN
+			send_embargo = SOV
+			send_embargo = USA
+			send_embargo = SAF
+			send_embargo = FRA
+			send_embargo = RAJ
+			send_embargo = AUS
+			send_embargo = NZL
+			send_embargo = POL
+			send_embargo = NOR
+			send_embargo = MEX
+			send_embargo = BRA
+			ENG = {send_embargo = YUG}
+			USA = {send_embargo = YUG}
+			SOV = {send_embargo = YUG}
+			POL = {send_embargo = YUG}
+			MEX = {send_embargo = YUG}
+			NOR = {send_embargo = YUG}
+			BRA = {send_embargo = YUG}
+			FRA = {send_embargo = YUG}
+		}}
 	}
 
 	focus = {
@@ -456,6 +480,13 @@ add_war_support = 0.05
                                 level = 3
                                 instant_build = yes
                                }}
+							   736 = {    add_extra_state_shared_building_slots = 2
+
+             add_building_construction = {
+                                type = industrial_complex
+                                level = 2
+                                instant_build = yes
+                               }}
 			
 		}
 	}
@@ -494,8 +525,14 @@ GER = {has_completed_focus = GER_anschluss}
 
 		completion_reward = {
 			remove_ideas = YUG_idea_slovene_nationalism
-			GER = {transfer_state = 102
-			transfer_state = 853}
+			GER = {
+			transfer_state = 102
+			transfer_state = 853
+			102 = {add_compliance = 100}
+			853 = {add_compliance = 100}
+			}
+
+			
 			107 = {    add_extra_state_shared_building_slots = 3
 			add_resource = {
 		type = steel
@@ -504,6 +541,13 @@ GER = {has_completed_focus = GER_anschluss}
              add_building_construction = {
                                 type = industrial_complex
                                 level = 3
+                                instant_build = yes
+                               }}
+							   736 = {    add_extra_state_shared_building_slots = 2
+
+             add_building_construction = {
+                                type = industrial_complex
+                                level = 1
                                 instant_build = yes
                                }}
 
@@ -592,9 +636,16 @@ GER = {has_completed_focus = GER_anschluss}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
+		
 			remove_ideas = YUG_idea_macedonian_opposition
-			BUL = {transfer_state = 106
-			transfer_state = 803}
+			
+			BUL = {
+			transfer_state = 106
+			transfer_state = 803
+			106 = {add_compliance = 100}
+			803 = {add_compliance = 100}
+			}
+			
 			107 = {    add_extra_state_shared_building_slots = 3
 			add_resource = {
 		type = tungsten
@@ -609,6 +660,130 @@ GER = {has_completed_focus = GER_anschluss}
 		}
 	}
 
+
+
+focus = {
+		id = YUG_united_yugoslavia
+		icon = GFX_focus_ITA_generic_fascist_workers
+		prerequisite = { focus = YUG_surrender_macedonia focus = YUG_concessions_for_macedonians }
+		prerequisite = { focus = YUG_slovenia_for_support focus = YUG_ban_slovene_nationalist_parties }
+		prerequisite = { focus = YUG_surrender_hungarien_claims focus = YUG_keep_hungarien_claims }
+		x = 1
+		y = 2
+		relative_position_id = YUG_surrender_italian_claims
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 40
+			modifier = { #If Bulgaria is really so much committed into getting Macedonian support, then we might just surrender Macedonia
+				factor = 5
+				controls_state = 106
+				106 = {
+					has_dynamic_modifier = { modifier = widespread_bulgarian_sentiment_01 }
+				}
+			}
+		}
+
+		available = {
+	
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		
+			
+			add_ideas = {YUG_united_yugoslavia_1}
+			
+			
+			
+			
+		}
+	}
+	focus = {
+		id = YUG_focus_on_production
+		icon = GFX_focus_ITA_generic_fascist_workers
+		prerequisite = { focus = YUG_united_yugoslavia }
+		mutually_exclusive = {focus = YUG_focus_on_construction}
+		x = 0
+		y = 3
+		relative_position_id = YUG_surrender_italian_claims
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 40
+			
+		}
+
+		available = {
+	
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		
+			swap_ideas = {
+    remove_idea = YUG_united_yugoslavia_1
+    add_idea = YUG_united_yugoslavia_2
+}
+
+		}
+	}
+focus = {
+		id = YUG_focus_on_construction
+		icon = GFX_focus_ITA_generic_fascist_workers
+		prerequisite = { focus = YUG_united_yugoslavia }
+		mutually_exclusive = {focus = YUG_focus_on_production}
+		x = 2
+		y = 3
+		relative_position_id = YUG_surrender_italian_claims
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 40
+			
+		}
+
+		available = {
+	
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+		
+			swap_ideas = {
+    remove_idea = YUG_united_yugoslavia_1
+    add_idea = YUG_united_yugoslavia_3
+}
+
+		}
+	}
 	focus = {
 		id = YUG_invite_german_military_mission
 		icon = GFX_focus_generic_military_mission
@@ -696,6 +871,8 @@ add_war_support = 0.1
 			ITA = {
 				transfer_state = 103
 				transfer_state = 105
+				103 = {add_compliance = 100}
+			105 = {add_compliance = 100}
 				}
 			107 = {    add_extra_state_shared_building_slots = 3
 			add_resource = {
@@ -800,6 +977,8 @@ add_war_support = 0.05
 			HUN = {
 				transfer_state = 45
 				transfer_state = 764
+				45 = {add_compliance = 100}
+			764 = {add_compliance = 100}
 				}
 			107 = {    add_extra_state_shared_building_slots = 3
 			add_resource = {
@@ -2337,7 +2516,7 @@ add_stability = -0.1
 		x = 37
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 70
@@ -2362,7 +2541,13 @@ add_stability = -0.1
 
 
 		completion_reward = {
-			army_experience = 25
+			army_experience = 50
+			add_doctrine_cost_reduction = {
+				name = YUG_army_maneuvers
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
 		}
 	}
 
@@ -2374,7 +2559,7 @@ add_stability = -0.1
 		y = 1
 		relative_position_id =  YUG_army_modernization
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 50
@@ -2415,7 +2600,7 @@ add_stability = -0.1
 		y = 1
 		relative_position_id = YUG_motorize_the_cavalry
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 40
@@ -2458,7 +2643,7 @@ add_stability = -0.1
 		y = 1
 		relative_position_id = YUG_motorize_the_cavalry
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 40
@@ -2538,7 +2723,7 @@ add_stability = -0.1
 		y = 2
 		relative_position_id = YUG_motorize_the_cavalry
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -2616,7 +2801,7 @@ add_stability = -0.1
 		y = 1
 		relative_position_id = YUG_army_modernization
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 70
@@ -2654,7 +2839,7 @@ add_stability = -0.1
 		y = 1
 		relative_position_id = YUG_small_arms
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 70
@@ -2692,7 +2877,7 @@ add_stability = -0.1
 		y = 2
 		relative_position_id = YUG_small_arms
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 60
@@ -2730,7 +2915,7 @@ add_stability = -0.1
 		y = 1
 		relative_position_id = YUG_army_modernization
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 70
@@ -2768,7 +2953,7 @@ add_stability = -0.1
 		y = 1
 		relative_position_id = YUG_mountain_brigades
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 50
@@ -2806,7 +2991,7 @@ add_stability = -0.1
 		y = 2
 		relative_position_id = YUG_mountain_brigades
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 40
@@ -2882,7 +3067,7 @@ add_stability = -0.1
 		y = 1
 		relative_position_id = YUG_army_modernization
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 70
@@ -2905,8 +3090,8 @@ add_stability = -0.1
 		completion_reward = {
 			add_doctrine_cost_reduction = {
 				name = YUG_army_maneuvers
-				cost_reduction = 0.5
-				uses = 1
+				cost_reduction = 0.8
+				uses = 2
 				category = land_doctrine
 			}
 		}
@@ -2921,7 +3106,7 @@ add_stability = -0.1
 		y = 1
 		relative_position_id = YUG_army_maneuvers
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 30
@@ -2961,7 +3146,7 @@ add_stability = -0.1
 		y = 1
 		relative_position_id = YUG_army_maneuvers
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 60
@@ -3000,7 +3185,7 @@ add_stability = -0.1
 		y = 2
 		relative_position_id = YUG_army_maneuvers
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 70
