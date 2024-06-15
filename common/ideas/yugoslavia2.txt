@@ -12,10 +12,10 @@ ideas = {
 
 			
 			modifier = {
-			war_support_factor = 0.2
-			stability_factor = 0.2
+			war_support_factor = 0.15
+			stability_factor = 0.15
 				consumer_goods_factor = -0.05
-				surrender_limit = 0.9
+				surrender_limit = 0.4
 				conscription_factor = 0.1
 				army_core_attack_factor = 0.1
 				army_core_defence_factor = 0.1
@@ -37,7 +37,7 @@ YUG_united_yugoslavia_2 = {
 			war_support_factor = 0.2
 			stability_factor = 0.2
 			consumer_goods_factor = -0.05
-			surrender_limit = 0.9
+			surrender_limit = 0.8
 			conscription_factor = 0.1
 			army_core_attack_factor = 0.1
 			army_core_defence_factor = 0.1
@@ -60,16 +60,37 @@ YUG_united_yugoslavia_3 = {
 			war_support_factor = 0.2
 			stability_factor = 0.2
 			consumer_goods_factor = -0.1
-			surrender_limit = 0.9
+			surrender_limit = 0.8
 			conscription_factor = 0.1
 			army_core_attack_factor = 0.1
 			army_core_defence_factor = 0.1
-			local_building_slots_factor = 0.5
+			local_building_slots_factor = 0.4
 			industrial_factory_donations = 3
 			global_building_slots = 2
-			production_speed_buildings_factor = 0.2
+			production_speed_buildings_factor = 0.15
 			}
 }
+YUG_united_yugoslavia_4 = {
+			picture = generic_production_bonus
+			removal_cost = -1
+			
+			allowed = {
+				original_tag = YUG
+			}
 
+			
+			modifier = {
+			weekly_manpower = 1000
+			war_support_factor = 0.2
+			stability_factor = 0.2
+				consumer_goods_factor = -0.05
+				surrender_limit = 0.8
+				conscription_factor = 0.25
+				conscription = 0.03
+				army_core_attack_factor = 0.15
+				army_core_defence_factor = 0.15
+				local_building_slots_factor = 0.4
+			}
+}
 
 }}
