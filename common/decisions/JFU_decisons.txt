@@ -223,7 +223,8 @@ political_actions1 = {
 		icon = ITA_italian_east_africa
 		fire_only_once = yes
 		allowed = { tag = ITA }
-		available = { 
+		available = {
+YUG = {is_ai = yes}		
 			has_completed_focus = ITA_balkan_ambition
 			if = {
 				limit = { 
@@ -316,7 +317,8 @@ political_actions1 = {
 		icon = ITA_italian_east_africa
 		fire_only_once = yes
 		allowed = { tag = ITA }
-		available = {	
+		available = {
+GRE = {is_ai = yes}				
 			has_completed_focus = ITA_italian_irredentism
 			if = {
 				limit = { 

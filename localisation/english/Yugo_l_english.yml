@@ -10,7 +10,9 @@
   YUG_keep_italian_claims:0 "Keep Italian Claims"
   YUG_surrender_hungarien_claims:0 "Surrender Hungarien Claims"
   YUG_keep_hungarien_claims:0 "Keep Hungarien Claims"
-  
+  ITA_albanian_occupation2:0 "Develope Albania"
+  ITA_yugo_attack1_desc_tt:0 "Get a Decision to RAnnex Yugoslavia! ! \nIf it Yisn´t Controlled! by a LPlayer !!"
+  ITA_greece_attack2_desc_tt:0 "\nR-----------------------------------------! \n\nGet a Decision to RAnnex Greece! ! \nIf it Yisn´t Controlled! by a LPlayer !!"
  GYUG_fascism: "Greater Yugoslavia"
  GYUG_fascism_ADJ: "Greater Yugoslavia"
  GYUG_fascism_DEF: "Greater Yugoslavia"
