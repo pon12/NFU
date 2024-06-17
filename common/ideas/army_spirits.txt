@@ -12,7 +12,7 @@ ideas = {
 				factor = 1
 			}
 		}
-		}
+		
 		tenacious_defense_spirit = {
 			ledger = army
 			available = { has_military_academy = yes }
@@ -153,7 +153,7 @@ ideas = {
 			}
 		}
 	}
-
+#
 	army_spirit = {
 		professional_officer_corps_spirit = {
 			ledger = army
@@ -428,30 +428,6 @@ ideas = {
 		}
 
 	}
-				MAN_amptanks_focus1
-		
-			allowed = {
-				tag = MAN
-				always = yes
-			}
-
-			allowed_civil_war =  {always = yes }
+	}
+				
 			
-			removal_cost = -1
-
-			equipment_bonus = {
-				amphibious_tank_chassis = {
-					build_cost_ic = -0.03 instant = yes
-				}
-			}
-			MAN_amptanks_focus2
-			picture = generic_manpower_bonus
-            modifier = {
-            }
-			equipment_bonus = {
-                amphibious_tank_chassis = {
-                    build_cost_ic = -0.1
-                    instant = yes
-                    }
-			
-}
