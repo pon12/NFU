@@ -21,53 +21,10 @@ focus_tree = {
 
 
 
-#	focus = {
-#		id = CAN_
-#		icon = GFX_
-#		prerequisite = { focus = }
-#		mutually_exclusive = { focus =  }
-#		x = -3
-#		y = 0
-#		relative_position_id = 
-#
-#		cost = 10
-#
-#		ai_will_do = {
-#			factor = 1
-#		}
-#
-#		available = {
-#
-#		}
-#		
-#		bypass = {
-#
-#		}
-#
-#		cancel_if_invalid = yes
-#		continue_if_invalid = no
-#		available_if_capitulated = no
-#
-#		complete_tooltip = {
-#
-#		}
-#
-#		completion_reward = {
-#
-#		}
-#	}
-
-
-
-
-	############################
-	##### INDUSTRY SECTION #####
-	############################
-	shared_focus = ALLIES_commonwealth_of_nations
-	focus = {
-		id = CAN_rowell_sirois_commission
-		icon = GFX_FOCUS_CAN_ROWELL
-		x = 0
+focus = {
+		id = CAN_IND1
+		icon = GFX_FOCUS_CAN_CORP
+		x = 30
 		y = 0
 
 		cost = 5
@@ -83,15 +40,496 @@ focus_tree = {
 			add_political_power = 150
 		}
 	}
+	
+	focus = {
+		id = CAN_Develope_Ontario
+		icon = GFX_R56_GOAL_CAN_NATIONAL_HOUSING_ACT
+		prerequisite = { focus = CAN_IND1 }
+		x = 26
+		y = 1
+
+		cost = 5
+
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			276 = {
+			add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			682 = {
+			add_extra_state_shared_building_slots = 4
+					add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = CAN_Civs_Ontario
+		icon = GFX_FRA_METROPOLITAN_FRANCE
+		prerequisite = { focus = CAN_Develope_Ontario }
+		mutually_exclusive = { focus = CAN_Mills_Ontario}
+		x = 25
+		y = 2
+
+		cost = 5
+
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			276 = {
+			add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			682 = {
+			add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = CAN_Resources_Ontario
+		icon = GFX_focus_generic_resource_extraction
+		prerequisite = { focus = CAN_Mills_Ontario focus = CAN_Civs_Ontario }
+		x = 26
+		y = 3
+
+		cost = 5
+
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			276 = {
+			add_extra_state_shared_building_slots = 1
+					add_resource = {
+		type = steel
+		amount = 50
+	}
+	add_resource = {
+		type = chrom
+		amount = 20
+	}
+			}
+			682 = {
+			add_extra_state_shared_building_slots = 1
+					add_resource = {
+		type = aluminium
+		amount = 30
+	}
+			}
+		}
+	}
+	focus = {
+		id = CAN_Mills_Ontario
+		icon = GFX_GENERIC_FACTORY_COMPLEX
+		prerequisite = { focus = CAN_Develope_Ontario }
+		mutually_exclusive = { focus = CAN_Civs_Ontario}
+		x = 27
+		y = 2
+
+		cost = 5
+
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			276 = {
+			add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			682 = {
+			add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+focus = {
+		id = CAN_Develope_Quebec
+		icon = GFX_R56_GOAL_CAN_NATIONAL_HOUSING_ACT
+		prerequisite = { focus = CAN_IND1 }
+		x = 30
+		y = 1
+
+		cost = 5
+
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			862 = {
+			add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			466 = {
+			add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			861 = {
+			add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			860 = {
+			add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = CAN_Civs_Quebec
+		icon = GFX_FRA_METROPOLITAN_FRANCE
+		prerequisite = { focus = CAN_Develope_Quebec }
+		mutually_exclusive = { focus = CAN_Mills_Quebec}
+		x = 29
+		y = 2
+
+		cost = 10
+
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			862 = {
+			add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			466 = {
+			add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			861 = {
+			add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			860 = {
+			add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = CAN_Mills_Quebec
+		icon = GFX_GENERIC_FACTORY_COMPLEX
+		prerequisite = { focus = CAN_Develope_Quebec }
+		mutually_exclusive = { focus = CAN_Civs_Quebec}
+		x = 31
+		y = 2
+
+		cost = 10
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			862 = {
+			add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			466 = {
+			add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			861 = {
+			add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			860 = {
+			add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	
+	
+	focus = {
+		id = CAN_Develope_Columbia
+		icon = GFX_R56_GOAL_CAN_NATIONAL_HOUSING_ACT
+		prerequisite = { focus = CAN_IND1 }
+		x = 34
+		y = 1
+
+		cost = 5
+
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			473 = {
+			add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			471 = {
+			add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			740 = {
+			add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			470 = {
+			add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = CAN_Civs_Columbia
+		icon = GFX_FRA_METROPOLITAN_FRANCE
+		prerequisite = { focus = CAN_Develope_Columbia }
+		mutually_exclusive = { focus = CAN_Mills_Columbia}
+		x = 33
+		y = 2
+
+		cost = 5
+
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			473 = {
+			add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			471 = {
+			add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			
+		}
+	}
+	focus = {
+		id = CAN_Mills_Columbia
+		icon = GFX_GENERIC_FACTORY_COMPLEX
+		prerequisite = { focus = CAN_Develope_Columbia }
+		mutually_exclusive = { focus = CAN_Civs_Columbia}
+		x = 35
+		y = 2
+
+		cost = 5
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			473 = {
+			add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			471 = {
+			add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = CAN_Resources_Columbia
+		icon = GFX_focus_generic_resource_extraction
+		prerequisite = { focus = CAN_Mills_Columbia focus = CAN_Civs_Columbia}
+		x = 34
+		y = 3
+
+		cost = 5
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			473 = {
+			add_extra_state_shared_building_slots = 1
+					add_resource = {
+		type = steel
+		amount = 30
+	}
+	
+			}
+			471 = {
+			add_extra_state_shared_building_slots = 1
+					add_resource = {
+		type = aluminium
+		amount = 30
+	}
+			}
+			740 = {
+			add_extra_state_shared_building_slots = 1
+					add_resource = {
+		type = crom
+		amount = 30
+	}
+			}
+			470 = {
+			add_extra_state_shared_building_slots = 1
+					add_resource = {
+		type = tungsten
+		amount = 30
+	}
+			}
+		}
+	}
+	
+
+
+	############################
+	##### INDUSTRY SECTION #####
+	############################
+	shared_focus = ALLIES_commonwealth_of_nations
+	
 
 	focus = {
 		id = CAN_crown_corporations
 		icon = GFX_FOCUS_CAN_CORP
-		x = 3
+		x = 4
 		y = 0
 		relative_position_id = CAN_rowell_sirois_commission
 
-		cost = 5
+		cost = 2
 
 
 
@@ -106,54 +544,18 @@ focus_tree = {
 	}
 
 
-	focus = {
-		id = CAN_national_housing_act
-		icon = GFX_R56_GOAL_CAN_NATIONAL_HOUSING_ACT
-		prerequisite = { focus = CAN_rowell_sirois_commission }
-		prerequisite = { focus = CAN_crown_corporations }
-		x = 2
-		y = 1
-		relative_position_id = CAN_rowell_sirois_commission
-
-		cost = 5
-
-
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-
-		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-				set_state_flag = CAN_national_housing_act_IC
-			}
-		}
-	}
+	
 
 
 	focus = {
 		id = CAN_dollar_a_year_men
 		icon = GFX_goal_generic_construction
-		prerequisite = { focus = CAN_national_housing_act}
-		x = 2
-		y = 2
-		relative_position_id = CAN_rowell_sirois_commission
+		prerequisite = { focus = CAN_crown_corporations}
+		x = -1
+		y = 1
+		relative_position_id = CAN_crown_corporations
 
-		cost = 5
+		cost = 2
 
 		ai_will_do = {
 			factor = 75
@@ -191,109 +593,9 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = CAN_canada_pacific_railway
-		icon = GFX_goal_generic_construct_infrastructure
-		prerequisite = { focus = CAN_rowell_sirois_commission }
-		x = 0
-		y = 2
-		relative_position_id = CAN_rowell_sirois_commission
-
-		cost = 2
-
-		ai_will_do = {
-			factor = 75
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-			NOT = {
-				owns_state = 473
-				owns_state = 471
-			}
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-
-		completion_reward = {
-			build_railway = { #Vancouver - NW Canada
-				path = {
-					1408 1858 10273 4870 10548
-				}
-			}
-		}
-	}
+	
 
 
-	focus = {
-		id = CAN_retool_angus_shops
-		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = CAN_canada_pacific_railway }
-		prerequisite = { focus = CAN_bits_and_pieces_program }
-		x = 2
-		y = 3
-		relative_position_id = CAN_rowell_sirois_commission
-
-		cost = 5
-		
-		bypass = {
-			custom_trigger_tooltip = {
-				tooltip = production_effort_tt
-				all_owned_state = {
-					free_building_slots = {
-						building = arms_factory
-						size < 1
-						include_locked = yes
-					}					
-				}
-			}
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-
-		complete_tooltip = {
-			random_state = {
-				limit = {
-					has_state_flag = CAN_retool_angus_shops_AF
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-
-		completion_reward = {
-			random_owned_controlled_state = {
-				prioritize = { 285 517 }
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-				set_state_flag = CAN_retool_angus_shops_AF
-			}
-		}
-	}
 
 
 	############################
@@ -1491,11 +1793,11 @@ focus_tree = {
 	focus = {
 		id = CAN_forced_quebec_conscription
 		icon = GFX_goal_tfv_can_forced_quebec_conscription 
-		prerequisite = { focus = CAN_long_branch_arsenal focus = CAN_independent_command }
+		prerequisite = { focus = CAN_Civs_Quebec focus = CAN_Mills_Quebec }
 		mutually_exclusive = { focus =  CAN_compromise_with_quebec }
-		x = 2
-		y = 6
-		relative_position_id = CAN_defence_of_canada_regulations
+		x = 0
+		y = 1
+		relative_position_id = CAN_Civs_Quebec
 
 		cost = 5
 
@@ -1527,11 +1829,11 @@ focus_tree = {
 	focus = {
 		id = CAN_compromise_with_quebec
 		icon = GFX_goal_tfv_can_compromise_with_quebec
-		prerequisite = { focus = CAN_long_branch_arsenal focus = CAN_independent_command }
+		prerequisite = { focus = CAN_Civs_Quebec focus = CAN_Mills_Quebec }
 		mutually_exclusive = { focus =  CAN_forced_quebec_conscription }
-		x = 4
-		y = 6
-		relative_position_id = CAN_defence_of_canada_regulations
+		x = 2
+		y = 1
+		relative_position_id = CAN_Civs_Quebec
 
 		cost = 5
 

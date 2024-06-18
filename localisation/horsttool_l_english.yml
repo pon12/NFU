@@ -838,9 +838,9 @@
  send_air_to_eng:0 "Send Planes to UK"
  send_air_to_eng_desc:0 "Sends all Planes expect Carrier Planes and Naval Patrolbombers to the UK"
  cancel_air_to_eng:0 "Cancel sending Planes to UK"
- JFU_decisions:0 " JFU Decisions"
- JFU_templates:0 "JFU Template Decisions"
- political_actions1:0 "JFU Political Actions"
+ JFU_decisions:0 " NFUP Decisions"
+ JFU_templates:0 "NFUP Template Decisions"
+ political_actions1:0 "NFUP Political Actions"
  anti_monarchist_raids:0 "Anti-Monarchist Raids"
 
 
@@ -861,7 +861,7 @@
  pre_grinded:0 "No Xp gain"
  GER_endsieg_idea:0 "Endsieg"
  women_in_the_workforce_ITA:0 " Woman in the Workforce"
- horst_groupkey:0 "JFU Gamerules"
+ horst_groupkey:0 "NFUP Gamerules"
  JAP_strike_on_the_northern_resource_area:0 "Strike on the Northern Resource Area"
  GER_plan_z_idea:0 "Plan Z"
  raiding_fleet_designer:0 "Raiding Fleet Designer"
@@ -966,8 +966,8 @@
  continuous_morb:0 "Morbilization"
  ENG_prep_africa:0 "Prepare Afrika"
 
- naldo:0 "Naldo"
- johannes:0 "Johannes"
+ naldo:0 "Juggle"
+ johannes:0 "Juggle"
 
  rangers1:0 "Rangers"
 
