@@ -1,4 +1,4 @@
-﻿### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_POLITICAL}
 ### search_filters = {FOCUS_FILTER_RESEARCH}
 ### search_filters = {FOCUS_FILTER_INDUSTRY}
 ### search_filters = {FOCUS_FILTER_STABILITY}
@@ -100,7 +100,27 @@ focus_tree = {
 			}
 		}
 	}
-
+	focus = {
+		id = Civ_meister
+		icon = GFX_goal_generic_production2
+		prerequisite = { focus = SOV_heavy_industry }
+		x = 1
+		y = 1
+	    relative_position_id = SOV_heavy_industry
+		cost = 5
+		
+				completion_reward = {
+		
+		      255 = {
+ add_extra_state_shared_building_slots = 3
+add_building_construction = {
+                                type = industrial_complex
+                                level = 3
+                                instant_build = yes
+                            }
+} 
+			   }
+			}
 	focus = {
 		id = SOV_heavy_industry
 
@@ -157,10 +177,10 @@ focus_tree = {
 							include_locked = yes
 						}
 					}
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 4
 					add_building_construction = {
 						type = industrial_complex
-						level = 1
+						level = 4
 						instant_build = yes
 					}
 					set_state_flag = SOV_finish_five_year_plan_2IC
@@ -1087,10 +1107,10 @@ focus_tree = {
 						level = 1
 						instant_build = yes
 					}
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 4
 					add_building_construction = {
 						type = industrial_complex
-						level = 1
+						level = 4
 						instant_build = yes
 					}
 				}
@@ -1335,10 +1355,10 @@ focus_tree = {
 						level = 1
 						instant_build = yes
 					}
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 4
 					add_building_construction = {
 						type = industrial_complex
-						level = 1
+						level = 4
 						instant_build = yes
 					}
 				}
