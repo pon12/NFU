@@ -1,4 +1,4 @@
-﻿focus_tree = {
+focus_tree = {
 	id = french_focus
 	
 	country = {
@@ -23,7 +23,7 @@
 
 		prerequisite = {}
 		mutually_exclusive = { }
-		cost = 10
+		cost = 5
 			ai_will_do = {
 			factor = 1
 		}
@@ -54,7 +54,7 @@
 			prerequisite = { focus = FRA_devalue_the_franc }
 			mutually_exclusive = { }
 			relative_position_id = FRA_devalue_the_franc
-			cost = 10
+			cost = 5
 	
 			cancel_if_invalid = yes
 			continue_if_invalid = no
@@ -75,7 +75,7 @@
 		x = 0
 		y = 2
 		relative_position_id = FRA_invest_in_the_metropole
-		cost = 10
+		cost = 5
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
@@ -97,7 +97,7 @@
 
 		prerequisite = { focus = FRA_devalue_the_franc }
 		relative_position_id = FRA_devalue_the_franc
-		cost = 10
+		cost = 5
 
 
 		available_if_capitulated = yes
@@ -127,7 +127,7 @@ focus = {
 		y = 1
 		prerequisite = { focus = FRA_invest_in_the_metropole }
 		relative_position_id = FRA_invest_in_the_metropole
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -153,7 +153,7 @@ focus = {
 
 		prerequisite = { focus = FRA_invest_in_the_colonies }
 		relative_position_id = FRA_invest_in_the_colonies
-		cost = 10
+		cost = 5
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -178,7 +178,7 @@ focus = {
 		x = 0
 		y = 2
 		relative_position_id = FRA_invest_in_the_colonies
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -204,7 +204,7 @@ focus = {
 		x = -1
 		y = 1
 		relative_position_id = FRA_colonial_industry
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
