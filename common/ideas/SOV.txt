@@ -24,9 +24,9 @@ ideas = {
 
 			modifier = {
 				production_factory_efficiency_gain_factor = -0.15
-				production_factory_max_efficiency_factor = 0.1
+				production_factory_max_efficiency_factor = 0.05
 				consumer_goods_factor = 0.10
-				production_speed_industrial_complex_factor = 0.1
+				production_speed_industrial_complex_factor = 0.05
 			}
 		}
 
@@ -9366,9 +9366,9 @@ ideas = {
 
 			modifier = {
 				custom_modifier_tooltip = SOV_gosproyektstroy_1_tt
-				production_speed_industrial_complex_factor = 0.05
-				production_speed_arms_factory_factor = 0.05
-				production_speed_dockyard_factor = 0.05
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+				production_speed_dockyard_factor = 0.1
 			}
 		}
 
@@ -9573,8 +9573,8 @@ ideas = {
 			traits = { construction_company }
 
 			modifier = {
-				production_speed_industrial_complex_factor = 0.05
-				production_speed_arms_factory_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = 0.2
 				production_speed_dockyard_factor = 0.05
 				license_purchase_cost = -0.25
 				line_change_production_efficiency_factor = 0.1
@@ -9755,10 +9755,10 @@ ideas = {
 			modifier = {
 				custom_modifier_tooltip = SOV_gosproyektstroy_1_tt
 				production_speed_industrial_complex_factor = 0.05
-				production_speed_arms_factory_factor = 0.05
+				production_speed_arms_factory_factor = 0.1
 				production_speed_dockyard_factor = 0.05
 				license_purchase_cost = -0.25
-				production_factory_start_efficiency_factor = 0.1
+				production_factory_start_efficiency_factor = 0.05
 			}
 		}
 
