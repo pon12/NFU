@@ -1,6 +1,7 @@
 on_actions = {
 on_startup = {
 effect = {
+every_country = {army_experience = 10 navy_experience = 10 air_experience = 10}
 YUG = {remove_ideas = ai_limiter} 
 YUG = {add_timed_idea = {idea = JFU_no_tradeback  days = 1277}}
 YUG = {add_timed_idea = {idea = peace_training  days = 1277}}
