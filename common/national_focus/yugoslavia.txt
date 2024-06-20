@@ -1399,6 +1399,7 @@ add_stability = -0.1
 
 
 		completion_reward = {
+		custom_effect_tooltip = YUG_Militear2_desc_tt
 			108 = {
 				
 				
@@ -1530,6 +1531,7 @@ add_stability = -0.1
 		}
 
 		available = {
+		has_completed_focus = YUG_develop_civilian_industry
 			any_controlled_state = {
 				is_core_of = ROOT
 				is_fully_controlled_by = ROOT
@@ -1577,7 +1579,7 @@ add_stability = -0.1
 		}
 
 		available = {
-			
+			has_completed_focus = YUG_develop_military_industry
 		}
 
 		bypass = {
@@ -1720,6 +1722,7 @@ add_stability = -0.1
 
 
 		completion_reward = {
+		custom_effect_tooltip = YUG_Militear_desc_tt
 			108 = {
 
 				add_extra_state_shared_building_slots = 4
@@ -1741,7 +1744,7 @@ add_stability = -0.1
 		x = 0
 		y = 1
 		relative_position_id = YUG_develop_slovenian_industry
-
+mutually_exclusive = { focus = YUG_expand_the_sarajevo_arsenals }
 		cost = 10
 
 		ai_will_do = {
@@ -1822,7 +1825,7 @@ add_stability = -0.1
 		x = -2
 		y = 0
 		relative_position_id = YUG_serbian_steel
-
+mutually_exclusive = { focus = YUG_serbian_steel }
 		cost = 10
 
 		ai_will_do = {

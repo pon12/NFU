@@ -51,7 +51,7 @@ focus = {
 		cost = 5
 
 
-
+		available = {OR = {ENG = {has_completed_focus = uk_develope_focus} GER = {has_completed_focus = GER_danzig_or_war}}}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
@@ -196,7 +196,7 @@ focus = {
 		cost = 5
 
 
-
+available = {OR = {ENG = {has_completed_focus = uk_develope_focus} GER = {has_completed_focus = GER_danzig_or_war}}}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
@@ -352,7 +352,7 @@ focus = {
 
 		cost = 5
 
-
+available = {OR = {ENG = {has_completed_focus = uk_develope_focus} GER = {has_completed_focus = GER_danzig_or_war}}}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
