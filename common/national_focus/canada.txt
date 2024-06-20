@@ -136,7 +136,7 @@ focus = {
 		amount = 50
 	}
 	add_resource = {
-		type = chrom
+		type = chromium
 		amount = 20
 	}
 			}
@@ -500,7 +500,7 @@ focus = {
 			740 = {
 			add_extra_state_shared_building_slots = 1
 					add_resource = {
-		type = crom
+		type = chromium
 		amount = 30
 	}
 			}
