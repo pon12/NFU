@@ -6031,55 +6031,16 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = ITA_servizio_informazione_militare
-		icon = GFX_focus_generic_secret_service_agency
-		prerequisite = { focus = ITA_solid_progress focus = ITA_the_abyssinian_fiasco focus = ITA_struggle_in_ethiopia }
-
-		x = 0
-		y = 1
-		relative_position_id = ITA_solid_progress
-		cost = 10
-		available = {
-		}
-
-		search_filters = {}
-
-		completion_reward = {
-			if = {
-				limit = {
-					has_dlc = "By Blood Alone"
-				}
-				ETH_deescalate_the_war_effect = yes
-			}
-			
-			if = {
-				limit = {
-					has_dlc = "La Resistance"
-				}
-#				if = {
-#					limit = {
-#						has_intelligence_agency = no
-#					}
-#					create_intelligence_agency = yes
-#				}
-				add_ideas = ITA_servizio_informazione_militare_ns
-
-			}
-			else = {
-				add_ideas = ITA_servizio_informazione_militare_ns_vanilla
-			}
-		}
-	}
+	
 
 	focus = {
 		id = ITA_triumph_in_africa_bba
 		icon = GFX_focus_ETH_the_second_italo_ethiopian_war
-		prerequisite = { focus = ITA_servizio_informazione_militare }
+		prerequisite = { focus = ITA_solid_progress focus = ITA_the_abyssinian_fiasco focus = ITA_struggle_in_ethiopia}
 
 		x = 0
 		y = 1
-		relative_position_id = ITA_servizio_informazione_militare
+		relative_position_id = ITA_solid_progress
 		cost = 5
 
 		bypass = {
@@ -6360,7 +6321,7 @@ focus_tree = {
 		prerequisite = { focus = ITA_the_man_of_providence }
 		mutually_exclusive = { focus = ITA_to_live_as_a_lion }
 		x = -1
-		y = 3
+		y = 2
 		relative_position_id = ITA_the_man_of_providence
 		cost = 5
 		available = {
@@ -6508,7 +6469,7 @@ focus_tree = {
 		prerequisite = { focus = ITA_la_battaglia_del_grano focus = ITA_la_battaglia_per_la_terra }
 
 		x = 1
-		y = 2
+		y = 1
 		relative_position_id = ITA_la_battaglia_del_grano
 		cost = 5
 		available = {
@@ -6528,7 +6489,7 @@ focus_tree = {
 		prerequisite = { focus = ITA_la_battaglia_per_le_nascite }
 
 		x = 0
-		y = 3
+		y = 2
 		relative_position_id = ITA_la_battaglia_per_le_nascite
 		cost = 5
 		available = {
@@ -6667,7 +6628,7 @@ focus_tree = {
 		prerequisite = { focus = ITA_believe_obey_fight }
 
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = ITA_believe_obey_fight
 		cost = 10
 
@@ -6712,7 +6673,7 @@ focus_tree = {
 		prerequisite = { focus = ITA_banda_carita }
 
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = ITA_banda_carita
 		cost = 10
 
@@ -6738,7 +6699,7 @@ focus_tree = {
 		prerequisite = { focus = ITA_culto_del_duce }
 
 		x = 6
-		y = 2
+		y = 1
 		relative_position_id = ITA_culto_del_duce
 		cost = 5
 		available = {
@@ -6765,7 +6726,7 @@ focus_tree = {
 		prerequisite = { focus = ITA_security_militias }
 		mutually_exclusive = { focus = ITA_strengthen_the_blackshirts }
 		x = -1
-		y = 2
+		y = 1
 		relative_position_id = ITA_security_militias
 		cost = 10
 		available = {
@@ -6837,7 +6798,7 @@ focus_tree = {
 		prerequisite = { focus = ITA_battaglioni_d_assalto focus = ITA_strengthen_the_blackshirts }
 
 		x = 1
-		y = 2
+		y = 1
 		relative_position_id = ITA_battaglioni_d_assalto
 		cost = 10
 		available = {
@@ -7383,7 +7344,7 @@ focus = {
 		icon = GFX_focus_ITA_albanian_fascist_militia
 		prerequisite = {  focus = ITA_albanian_occupation }
 
-		x = -3
+		x = -2
 		y = 2
 		relative_position_id = ITA_balkan_ambition
 		cost = 10
@@ -7480,7 +7441,7 @@ focus = {
 		icon = GFX_focus_ger_oppose_hitler
 		prerequisite = { focus = ITA_pact_of_steel }
 
-		x = -1
+		x = 0
 		y = 1
 		relative_position_id = ITA_pact_of_steel
 		cost = 5
@@ -7525,7 +7486,7 @@ focus = {
 		icon = GFX_FOCUS_ITA_GER
 		prerequisite = { focus = ITA_pact_of_steel }
 
-		x = 1
+		x = 2
 		y = 1
 		relative_position_id = ITA_pact_of_steel
 		cost = 5
