@@ -1029,7 +1029,7 @@ focus = {
 		}
 	}
 	focus = {
-		id = FRA_appeal_to_the_french_nation
+		id = FRA_appeal_to_the_french_nation2
 		icon = GFX_FOCUS_FRA_DE_GAULLE
 		x = 25
 		y = 0
@@ -1078,15 +1078,15 @@ focus = {
 		}
 	}
 	focus = {
-		id = FRA_appeal_to_overseas_territories
+		id = FRA_appeal_to_overseas_territories2
 		icon = GFX_goal_generic_radar
 		x = 0
 		y = 1
 
 		prerequisite = { 
-			focus = FRA_appeal_to_the_french_nation
+			focus = FRA_appeal_to_the_french_nation2
 		}
-		relative_position_id = FRA_appeal_to_the_french_nation
+		relative_position_id = FRA_appeal_to_the_french_nation2
 		
 		cost = 2
 		ai_will_do = {
@@ -1122,9 +1122,9 @@ focus = {
 		y = 1
 
 		prerequisite = { 
-			focus = FRA_appeal_to_overseas_territories
+			focus = FRA_appeal_to_overseas_territories2
 		}
-		relative_position_id = FRA_appeal_to_overseas_territories
+		relative_position_id = FRA_appeal_to_overseas_territories2
 		
 		cost = 5
 		ai_will_do = {
@@ -1178,9 +1178,9 @@ focus = {
 		y = 1
 
 		prerequisite = { 
-			focus = FRA_appeal_to_overseas_territories
+			focus = FRA_appeal_to_overseas_territories2
 		}
-		relative_position_id = FRA_appeal_to_overseas_territories
+		relative_position_id = FRA_appeal_to_overseas_territories2
 		
 		cost = 5
 		ai_will_do = {
@@ -1226,9 +1226,9 @@ focus = {
 		y = 1
 
 		prerequisite = { 
-			focus = FRA_appeal_to_overseas_territories
+			focus = FRA_appeal_to_overseas_territories2
 		}
-		relative_position_id = FRA_appeal_to_overseas_territories
+		relative_position_id = FRA_appeal_to_overseas_territories2
 		
 		cost = 5
 		ai_will_do = {
@@ -1275,9 +1275,9 @@ focus = {
 		y = 1
 
 		prerequisite = { 
-			focus = FRA_appeal_to_overseas_territories
+			focus = FRA_appeal_to_overseas_territories2
 		}
-		relative_position_id = FRA_appeal_to_overseas_territories
+		relative_position_id = FRA_appeal_to_overseas_territories2
 		
 		cost = 5
 		ai_will_do = {
@@ -1322,7 +1322,7 @@ focus = {
 			focus = FRA_intervention_in_west_africa
 			focus = FRA_intervention_in_central_africa
 		}
-		relative_position_id = FRA_appeal_to_overseas_territories
+		relative_position_id = FRA_appeal_to_overseas_territories2
 		
 		cost = 5
 		ai_will_do = {
@@ -1393,15 +1393,15 @@ focus = {
 		}
 	}
 	focus = {
-		id = FRA_continue_the_fight
+		id = FRA_continue_the_fight2
 		icon = GFX_goal_generic_major_war
 		x = 4
 		y = 3
 
 		prerequisite = { 
-			focus = FRA_appeal_to_the_french_nation
+			focus = FRA_appeal_to_the_french_nation2
 		}
-		relative_position_id = FRA_appeal_to_the_french_nation
+		relative_position_id = FRA_appeal_to_the_french_nation2
 		
 		cost = 5
 		ai_will_do = {
@@ -1450,9 +1450,9 @@ focus = {
 		y = 1
 
 		prerequisite = { 
-			focus = FRA_continue_the_fight
+			focus = FRA_continue_the_fight2
 		}
-		relative_position_id = FRA_continue_the_fight
+		relative_position_id = FRA_continue_the_fight2
 		
 		cost = 5
 		ai_will_do = {
@@ -1482,9 +1482,9 @@ focus = {
 		y = 2
 
 		prerequisite = { 
-			focus = FRA_continue_the_fight
+			focus = FRA_continue_the_fight2
 		}
-		relative_position_id = FRA_continue_the_fight
+		relative_position_id = FRA_continue_the_fight2
 		
 		cost = 5
 		ai_will_do = {
@@ -1517,9 +1517,9 @@ focus = {
 		y = 1
 
 		prerequisite = { 
-			focus = FRA_continue_the_fight
+			focus = FRA_continue_the_fight2
 		}
-		relative_position_id = FRA_continue_the_fight
+		relative_position_id = FRA_continue_the_fight2
 		
 		cost = 5
 		ai_will_do = {
@@ -1576,7 +1576,7 @@ focus = {
 		}
 	}
 	focus = {
-		id = FRA_the_maquis
+		id = FRA_the_maquis2
 		icon = GFX_focus_focus_fra_maquis
 		x = -2
 		y = 1
@@ -1597,8 +1597,8 @@ focus = {
 		bypass = {
 
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		
+		
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
@@ -1716,7 +1716,7 @@ focus = {
 		}
 	}
 	focus = {
-		id = FRA_the_civil_and_military_organization
+		id = FRA_the_civil_and_military_organization2
 		icon = GFX_goal_generic_military_deal
 		x = 0
 		y = 1
@@ -1749,13 +1749,13 @@ focus = {
 		}
 	}
 	focus = {
-		id = FRA_national_council_of_the_resistance
+		id = FRA_national_council_of_the_resistance2
 		icon = GFX_focus_focus_fra_national_resistance_council
 		x = -1
 		y = 2
 
 		prerequisite = { 
-			focus = FRA_the_civil_and_military_organization
+			focus = FRA_the_civil_and_military_organization2
 		}
 		prerequisite = {
 			focus = FRA_cooperation_with_the_communists
