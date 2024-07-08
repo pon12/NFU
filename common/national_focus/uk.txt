@@ -262,7 +262,6 @@ focus_tree = {
 			}
 		}
 	}
-	
 	focus = {
 		id = air_defense_focus
 		prerequisite = { focus = limited_rearmament_focus }
