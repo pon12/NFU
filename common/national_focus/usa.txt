@@ -557,10 +557,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 6
 				add_building_construction = {
 					type = arms_factory
-					level = 3
+					level = 6
 					instant_build = yes
 				}
 				set_state_flag = USA_arsenal_of_democracy_3AF
@@ -574,10 +574,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 6
 				add_building_construction = {
 					type = arms_factory
-					level = 3
+					level = 6
 					instant_build = yes
 				}
 				set_state_flag = USA_arsenal_of_democracy_3AF
@@ -592,14 +592,15 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 3
+				set_state_flag = USA_arsenal_of_democracy_3AF
+			}
+			add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = dockyard
 					level = 3
 					instant_build = yes
 				}
-				set_state_flag = USA_arsenal_of_democracy_3AF
-			}
+			
 			random_owned_controlled_state = {
 				limit = {
 					is_core_of = ROOT
@@ -625,7 +626,7 @@ focus_tree = {
 		icon = GFX_AMERICA_GOAL_AMERICAN_INDUSTRY
 		prerequisite = { focus = USA_arsenal_of_democracy }
 		available = {
-			date > 1938.2.1
+			date > 1938.1.1
 			NOT = { has_war = yes }
 		}
 		continue_if_invalid = yes
@@ -728,10 +729,10 @@ focus_tree = {
 						region = 120
 					}
 				}
-				add_extra_state_shared_building_slots = 5
+				add_extra_state_shared_building_slots = 7
 				add_building_construction = {
 					type = arms_factory
-					level = 5
+					level = 7
 					instant_build = yes
 				}
 				set_state_flag = USA_military_construction_5MF
@@ -791,7 +792,7 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					375 = {
+					368 = {
 						OR = {
 							NOT = { is_owned_and_controlled_by = USA }
 							AND = {
@@ -825,23 +826,7 @@ focus_tree = {
 					set_state_flag = USA_military_construction_3Inf
 				}
 			}
-			375 = {
-				if = {
-					limit = { 
-						is_owned_and_controlled_by = USA
-						free_building_slots = {
-							building = infrastructure
-							size > 2
-						}
-					}
-					add_building_construction = {
-						type = infrastructure
-						level = 3
-						instant_build = yes
-					}
-					set_state_flag = USA_military_construction_3Inf
-				}
-			}			
+			
 			if = {
 				limit = {
 					378 = {
@@ -878,7 +863,7 @@ focus_tree = {
 					set_state_flag = USA_military_construction_3Inf
 				}
 			}
-			378 = {
+			372 = {
 				if = {
 					limit = { 
 						is_owned_and_controlled_by = USA
@@ -953,10 +938,10 @@ focus_tree = {
 						region = 120
 					}
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 6
 				add_building_construction = {
 					type = arms_factory
-					level = 3
+					level = 6
 					instant_build = yes
 				}
 				set_state_flag = USA_USACE_projects_3AF
@@ -2111,7 +2096,7 @@ focus_tree = {
 		y = 1
 		prerequisite = { focus = USA_war_department }
 		relative_position_id = USA_war_department
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2160,6 +2145,12 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_USA_CONGRESS}
 		completion_reward = {
+			add_tech_bonus = {
+				name = USA_battleship_primacy
+				bonus = 1.0
+				uses = 1
+				category = bb_tech
+			}
 			if = {
 				limit = {
 					 has_war_support < 0.4 
@@ -2298,7 +2289,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = USA_battleship_primacy
 				bonus = 1.0
-				uses = 2
+				uses = 1
 				category = bb_tech
 			}
 		}
