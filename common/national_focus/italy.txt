@@ -1,4 +1,4 @@
-﻿### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_POLITICAL}
 ### search_filters = {FOCUS_FILTER_RESEARCH}
 ### search_filters = {FOCUS_FILTER_INDUSTRY}
 ### search_filters = {FOCUS_FILTER_STABILITY}
@@ -1716,7 +1716,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = ITA_italian_highways_bba
-		cost = 10
+		cost = 5
 		available = {
 		}
 
@@ -1747,7 +1747,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = ITA_italian_highways_bba
-		cost = 10
+		cost = 5
 		available = {
 		}
 
@@ -1758,10 +1758,10 @@ focus_tree = {
 			custom_effect_tooltip = ITA_power_plants_in_terni_ricostruzione_industriale_tt
 
 			2 = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -2049,7 +2049,7 @@ focus_tree = {
 		x = 3
 		y = 1
 		relative_position_id = ITA_italian_highways_bba
-		cost = 10
+		cost = 5
 		available = {
 		}
 
@@ -7362,7 +7362,7 @@ focus = {
 		search_filters = {FOCUS_FILTER_ANNEXATION FOCUS_FILTER_STABILITY FOCUS_FILTER_MANPOWER}
 
 		completion_reward = {
-44 = {    add_extra_state_shared_building_slots = 4
+44 = {    add_extra_state_shared_building_slots = 8
 			
              add_building_construction = {
                                 type = industrial_complex
@@ -7371,11 +7371,11 @@ focus = {
                                }
 							   add_building_construction = {
                                 type = arms_factory
-                                level = 1
+                                level = 3
                                 instant_build = yes
                                }
 							   }
-			805 = {    add_extra_state_shared_building_slots = 4
+			805 = {    add_extra_state_shared_building_slots = 8
 			
              add_building_construction = {
                                 type = industrial_complex
@@ -7384,11 +7384,11 @@ focus = {
                                }
 							   add_building_construction = {
                                 type = arms_factory
-                                level = 1
+                                level = 3
                                 instant_build = yes
                                }
 							   }
-							   934 = {    add_extra_state_shared_building_slots = 4
+							   934 = {    add_extra_state_shared_building_slots = 8
 			
              add_building_construction = {
                                 type = industrial_complex
@@ -7397,7 +7397,7 @@ focus = {
                                }
 							   add_building_construction = {
                                 type = arms_factory
-                                level = 1
+                                level = 3
                                 instant_build = yes
                                }
 							   }
