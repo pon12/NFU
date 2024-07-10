@@ -38,3 +38,21 @@
  FRA_appeal_to_overseas_territories2:0 "Appeal to Overseas Territories"
  FRA_continue_the_fight2:0 "Continue the Fight"
  FRA_appeal_to_the_french_nation2:0 "Appeal to the French Nation"
+
+#SOV FOCUS TREE
+ SOV_Great_War:0 "The Great Patriotic War"
+ SOV_Mec_IC_Bonus:0 "Mechanized Industry"
+ SOV_Tank_IC_Bonus:0 "Tank Industry"
+ SOV_persian_corridor_nfu:0 "The Persian Corridor"
+ SOV_american_assistance:0 "American Assistance"
+ SOV_american_tool_deliveries:0 "American Tool Deliveries"
+ SOV_allied_lend_lease_nfu:0 "Allied Lend-Lease"
+ SOV_coordinate_industry_nfu:0 "Coordinate Industry"
+ SOV_last_stand_of_communism_nfu:0 "Last Stand of Communism"
+
+#SOV IDEAS
+ SOV_Tank_IC_Reduction:0 "Tank Industry"
+ SOV_Mec_IC_Reduction:0 "Mechanized Industry"
+ SOV_Last_Stand:0 "Last Stand of Communism"
+
+

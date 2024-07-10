@@ -5527,7 +5527,7 @@ focus = {
 
 		focus = {
 		id = SOV_Great_War
-		icon = GFX_obsolete_template_overlay
+		icon = GFX_focus_SOV_the_glory_of_the_red_army_communism
 		cost = 5
 		x = 20
 		y = 6
@@ -5549,8 +5549,8 @@ focus = {
 	}
 
 	focus = {
-		id = Mec_IC_Bonus
-		icon = xxx
+		id = SOV_Mec_IC_Bonus
+		icon = GFX_GOAL_SOVIET_KATYUSHA
 		cost = 5
 		x = -1
 		y = 1
@@ -5561,7 +5561,7 @@ focus = {
 
 		completion_reward = {
 			add_timed_idea = {
-				idea = SOV_Mec_IC_Bonus # need to add Idea (10 - 15% IC)
+				idea = SOV_Mec_IC_Reduction # need to add Idea (10 - 15% IC)
 				days = 365
 			}
 	}
@@ -5569,8 +5569,8 @@ focus = {
 }
 
 focus = {
-	id = Tank_IC_Bonus
-	icon = xxx
+	id = SOV_Tank_IC_Bonus
+	icon = GFX_focus_generic_tank_production
 	cost = 5
 	x = 1
 	y = 1
@@ -5581,7 +5581,7 @@ focus = {
 
 	completion_reward = {
 		add_timed_idea = {
-			idea = SOV_Tank_IC_Bonus # need to add Idea (10 - 15% IC)
+			idea = SOV_Tank_IC_Reduction # need to add Idea (10 - 15% IC)
 			days = 365
 		}
 }
@@ -5590,18 +5590,18 @@ focus = {
 
 focus = {
 	id = SOV_american_assistance
-	icon =xxx
+	icon = GFX_focus_chi_mission_to_the_us 
 	cost = 10
 	x = 0
 	y = 1
 	prerequisite = {
-		focus = Tank_IC_Bonus
-		focus = Mec_IC_Bonus
+		focus = SOV_Tank_IC_Bonus
+		focus = SOV_Mec_IC_Bonus
 	}
 	mutually_exclusive = {
 		focus = SOV_persian_corridor_nfu
 	}
-	relative_position_id = Tank_IC_Bonus
+	relative_position_id = SOV_Tank_IC_Bonus
 	available = {
 		surrender_progress > 0.15
 	}
@@ -5614,15 +5614,15 @@ focus = {
 
 focus = {
 	id = SOV_persian_corridor_nfu
-	icon = xxx
-	prerequisite = { focus = Mec_IC_Bonus focus = Tank_IC_Bonus }
+	icon = GFX_goal_generic_construct_mil_factory
+	prerequisite = { focus = SOV_Mec_IC_Bonus focus = SOV_Tank_IC_Bonus }
 	x = 0
 	y = 1
 	mutually_exclusive = {
 		focus = SOV_american_assistance
 	
 	}
-	relative_position_id = Mec_IC_Bonus
+	relative_position_id = SOV_Mec_IC_Bonus
 	cost = 5
 	
 	available = { }
@@ -5683,7 +5683,7 @@ focus = {
 
 focus = {
 	id = SOV_american_tool_deliveries_nfu
-	icon = xxx
+	icon = GFX_GENERIC_FACTORY_COMPLEX
 	prerequisite = { focus = SOV_persian_corridor_nfu focus = SOV_american_assistance }
 	x = 1
 	y = 1
@@ -5741,7 +5741,7 @@ focus = {
 
 focus = {
 	id = SOV_allied_lend_lease_nfu
-	icon = xxx
+	icon = GFX_focus_renounce_the_treaty_of_trianon
 	prerequisite = { focus = SOV_american_tool_deliveries_nfu }
 	relative_position_id = SOV_american_tool_deliveries_nfu
 	mutually_exclusive = {
@@ -5826,7 +5826,7 @@ focus = {
 
 focus = {
 	id = SOV_coordinate_industry_nfu
-	icon = xxx
+	icon = GFX_focus_generic_steel
 	prerequisite = { focus = SOV_american_tool_deliveries_nfu }
 	mutually_exclusive = {
 		focus = SOV_allied_lend_lease_nfu
@@ -5859,7 +5859,7 @@ focus = {
 
 focus = {
 	id = SOV_last_stand_of_communism_nfu
-	icon = xxx
+	icon = GFX_FOCUS_SOV_DEFENSE_OF_MOSCOW
 	prerequisite = { focus = SOV_allied_lend_lease_nfu focus = SOV_coordinate_industry_nfu }
 	x = 2
 	y = 1
@@ -5876,9 +5876,8 @@ focus = {
 
 	completion_reward = {
 		add_timed_idea = {
-			# idea = SOV_last_stand_of_the_ussr days = 30
-
-			# need to add idea 
+			idea = SOV_Last_Stand
+			days = 150
 		}
 		hidden_effect = {
 			every_army_leader={
