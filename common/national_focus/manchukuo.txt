@@ -1,4 +1,4 @@
-﻿focus_tree = {
+focus_tree = {
 	id = manchukuo_focus
 	
 	country = {
@@ -992,7 +992,7 @@
 				}
 				add_resource = {
 					type = tungsten
-					amount = 6
+					amount = 100
 				}
 			}
 			525 = { 
@@ -1562,7 +1562,7 @@
 		id = MAN_armorfr
 		icon = GFX_FOCUS_JAP_ARMOR
 		prerequisite = { focus = MAN_obediencex }
-		x = 9
+		x = 12
 		y = 1
 	    relative_position_id = MAN_obediencex
 
@@ -1606,7 +1606,7 @@
 			set_cosmetic_tag = MAN88
 		
 		      761 = {
- add_extra_state_shared_building_slots = 6
+ add_extra_state_shared_building_slots = 10
 add_building_construction = {
                                 type = industrial_complex
                                 level = 6
@@ -1614,7 +1614,53 @@ add_building_construction = {
                             }
 } 
 			   }
-
-			}
-	
-	}
+			   }
+focus = {
+		id = Build_up
+		icon = GFX_goal_generic_production2
+		prerequisite = { focus = MAN_Tank_major  }
+		x = 0
+		y = 1
+	    relative_position_id = MAN_Tank_major 
+		available = {NOT = {country_exists = CHI}}
+		cost = 5
+		
+				completion_reward = {
+			add_ideas  = MAN_Tank_major
+			set_cosmetic_tag = MAN88
+		
+		      716 = {
+ add_extra_state_shared_building_slots = 5
+add_building_construction = {
+                                type = industrial_complex
+                                level = 1
+                                instant_build = yes
+                            }
+			   }
+			   }
+}
+focus = {
+		id = Heavy_project
+		icon = GFX_goal_generic_production2
+		prerequisite = { focus = Build_up }
+		x = 2
+		y = 1
+	    relative_position_id = Build_up
+		available = {NOT = {country_exists = CHI}}
+		cost = 5
+		
+				completion_reward = {
+			add_ideas  = MAN_Tank_major
+			set_cosmetic_tag = MAN88
+		
+		      611 = {
+ add_extra_state_shared_building_slots = 5
+add_building_construction = {
+                                type = industrial_complex
+                                level = 1
+                                instant_build = yes
+                            }
+			   }
+			   }
+}
+}
