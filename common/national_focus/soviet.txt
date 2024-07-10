@@ -5533,11 +5533,15 @@ focus = {
 		y = 6
 
 		available = {
+			
+			AND = {
+			always = false
 			OR = {
 				has_war_with = GER
 				has_war_with = ITA
 				has_war_with = JAP
 			}
+		}
 		}
 		completion_reward = {
 			add_ideas = tot_economic_mobilisation
