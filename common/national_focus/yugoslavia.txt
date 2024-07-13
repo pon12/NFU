@@ -159,7 +159,7 @@ is_ai = no
 	autonomous_state = autonomy_dominion
 	freedom_level = 0.2	
 }}
-			add_ideas = vittorio_emanuele_king_of_albania
+			add_ideas = vittorio_emanuele_king_of_albania2
 		}
 		
 	}

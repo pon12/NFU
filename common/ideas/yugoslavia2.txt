@@ -41,7 +41,33 @@ ideas = {
 				production_factory_max_efficiency_factor = 0.05
 			}
 		}
-		
+		vittorio_emanuele_king_of_albania2 = {
+			name = vittorio_emanuele
+
+			picture = ITA_vittorio_emanuele_of_albania
+
+			allowed = {
+				original_tag = YUG
+			}
+
+			available = {
+				
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.10
+				party_popularity_stability_factor = 0.1
+				compliance_growth = 0.1
+				cic_to_overlord_factor = 0.15
+				mic_to_overlord_factor = 0.15
+			}
+		}
 		general_staff2 = {
 			picture = german_advisors
 			allowed = {
@@ -57,6 +83,8 @@ ideas = {
 			modifier = {
 				army_org_Factor = 0.02
 				planning_speed = 0.10
+				cic_to_overlord_factor = 0.15
+				mic_to_overlord_factor = 0.15
 			}
 		}
 		Yugoslavian_Army = {
