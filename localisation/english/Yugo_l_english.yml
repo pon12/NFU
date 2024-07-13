@@ -1,9 +1,12 @@
 ﻿l_english:
+#YUG
   YUG_united_yugoslavia_1:0 "United Yugoslavia"
   YUG_united_yugoslavia_2:0 "United Yugoslavia"
   YUG_united_yugoslavia_3:0 "United Yugoslavia"
   YUG_united_yugoslavia_4:0 "United Yugoslavia"
   YUG_united_yugoslavia:0 "United Yugoslavia"
+  YUG_modern_tanks2:0 "Expand the Tank Programm"
+  YUG_artillery_regiments2:0 "Reorganise the Armed Forces"
   YUG_focus_on_production:0 "Focus on Production"
   YUG_focus_on_construction:0 "Focus on Construction"
   YUG_focus_on_consription:0 "Focus on Consription"
@@ -19,6 +22,12 @@
  
  YUG_Militear_desc_tt:0 "You can Later ROnly! Complete YDevelope Slovenian Industry! ! \n\n"
  YUG_Militear2_desc_tt:0 "You can Later ROnly! Complete YImprove Light Industry! ! \n\n"
+ 
+ YUG_idea_foreign_capital2:0 "Foreign Capital"
+ YUG_idea_axis_capital2:0 "Axis Investments"
+ general_staff2:0 "General Staff"
+ Yugoslavian_Army:0 "Yugoslavian Army"
+ #CANADA
  CAN_IND1:0 "Industrial Focus"
  CAN_Develope_Ontario:0 "Develope Ontario"
  CAN_Develope_Quebec:0 "Develope Quebec"
@@ -31,7 +40,7 @@
  CAN_Mills_Columbia:0 "Military Investment in Columbia"
  CAN_Resources_Ontario:0 "Mine Ressources in Ontario"
  CAN_Resources_Columbia:0 "Mine Ressources in Columbia"
- 
+ #FRA FIX
  FRA_the_maquis2:0 "The Maquis"
  FRA_the_civil_and_military_organization2:0 "The Civil and Military Organizations"
  FRA_national_council_of_the_resistance2:0 "National Council of the Resistance"
