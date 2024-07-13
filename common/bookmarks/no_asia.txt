@@ -1,11 +1,11 @@
 bookmarks = {
 	bookmark = {
-		name = "GATHERING_STORM_NAME"
-		desc = "GATHERING_STORM_DESC"
-		date = 1936.1.1.12
+		name = "NO_ASIA_NAME"
+		desc = "NO_ASIA_DESC"
+		date = 1936.1.2.12
 		picture = "GFX_select_date_1936"
 		default_country = "GER"
-		default = yes
+		default = no
 		"GER"={
 			history = "GER_GATHERING_STORM_DESC"
 			ideology = fascism
@@ -48,20 +48,20 @@ bookmarks = {
 				uk_develope_focus
 			}
 		}
-		"USA"={
-			history = "USA_GATHERING_STORM_DESC"
-			ideology = democratic
-			ideas = {
-				home_of_the_free
-				great_depression
-				undisturbed_isolation
-			}
-			focuses = {
-				USA_war_plan_black
-				USA_the_giant_wakes
-				USA_two_ocean_navy_act
-			}
-		}
+#		"USA"={
+#			history = "USA_GATHERING_STORM_DESC"
+#			ideology = democratic
+#			ideas = {
+#				home_of_the_free
+#				great_depression
+#				undisturbed_isolation
+#			}
+#			focuses = {
+#				USA_war_plan_black
+#				USA_the_giant_wakes
+#				USA_two_ocean_navy_act
+#			}
+#		}
 		"FRA"={
 			history = "FRA_GATHERING_STORM_DESC"
 			ideology = democratic
@@ -76,20 +76,20 @@ bookmarks = {
 				FRA_army_reform
 			}
 		}
-		"JAP"={
-			history = "JAP_GATHERING_STORM_DESC"
-			ideology = fascism
-			ideas = {
-				state_shintoism
-				JAP_zaibatsus
-				JAP_militarism
-			}	
-			focuses = {
-				JAP_the_zero
-				JAP_intervene_in_china
-				JAP_strike_on_the_southern_resource_area
-			}			
-		}
+#		"JAP"={
+#			history = "JAP_GATHERING_STORM_DESC"
+#			ideology = fascism
+#			ideas = {
+#				state_shintoism
+#				JAP_zaibatsus
+#				JAP_militarism
+#			}	
+#			focuses = {
+#				JAP_the_zero
+#				JAP_intervene_in_china
+#				JAP_strike_on_the_southern_resource_area
+#			}			
+#		}
 		"ITA"={
 			history = "ITA_GATHERING_STORM_DESC"
 			ideology = fascism
@@ -166,19 +166,19 @@ bookmarks = {
 				AST_rats_of_tobruk
 			}		
 		}
-		"NZL"={
-			minor = yes
-			history = "NZL_GATHERING_STORM_DESC"
-			ideology = democratic
-			ideas = {
-				
-			}
-			focuses = {
-				NZL_bob_semple_tank
-				NZL_maori_volunteers
-				AST_hmas_assault
-			}
-		}
+#		"NZL"={
+#			minor = yes
+#			history = "NZL_GATHERING_STORM_DESC"
+#			ideology = democratic
+#			ideas = {
+#				
+#			}
+#			focuses = {
+#				NZL_bob_semple_tank
+#				NZL_maori_volunteers
+#				AST_hmas_assault
+#			}
+#		}
 		"BRA"={
 			minor = yes
 			history = ""
@@ -189,21 +189,21 @@ bookmarks = {
 		}
 
 
-		"MEX"={
-			minor = yes
-			history = "MEXICO_GATHERING_STORM_DESC"
-			ideology = neutrality
-			ideas = {
-				MEX_church_power_2
-				MEX_politicised_army
-				MEX_oil_concessions
-			}
-			focuses = {
-				MEX_focus_knights_of_columbus
-				MEX_focus_state_education
-				MEX_focus_nationalize_the_oil_fields
-			}
-		}
+#		"MEX"={
+#			minor = yes
+#			history = "MEXICO_GATHERING_STORM_DESC"
+#			ideology = neutrality
+#			ideas = {
+#				MEX_church_power_2
+#				MEX_politicised_army
+#				MEX_oil_concessions
+#			}
+#			focuses = {
+#				MEX_focus_knights_of_columbus
+#				MEX_focus_state_education
+#				MEX_focus_nationalize_the_oil_fields
+#			}
+#		}
 		"NOR"={
 			minor = yes
 			history = ""
@@ -286,21 +286,21 @@ bookmarks = {
 				BUL_utmost_optimization
 			}
 		}
-		"MAN"={
-			minor = yes
-			history = "MAN_GATHERING_STORM_DESC"
-			ideology = fascism
-			ideas = {
-				MAN_banditry
-				MAN_kwantung_veto
-				MAN_low_legitimacy_5
-			}
-			focuses = {
-				MAN_obediencex
-				MAN_railways_opener
-				MAN_the_two_emperorsx
-			}
-		}
+#		"MAN"={
+#			minor = yes
+#			history = "MAN_GATHERING_STORM_DESC"
+#			ideology = fascism
+#			ideas = {
+#				MAN_banditry
+#				MAN_kwantung_veto
+#				MAN_low_legitimacy_5
+#			}
+#			focuses = {
+#				MAN_obediencex
+#				MAN_railways_opener
+#				MAN_the_two_emperorsx
+#			}
+#		}
 		"FIN"={
 			minor = yes
 			history = ""

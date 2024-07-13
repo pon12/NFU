@@ -1,0 +1,22 @@
+on_actions = {
+on_startup = {
+effect = {
+if = {
+limit = {
+				date = 1936.1.2 }
+				SWE = {annex_country = { target = USA transfer_troops = no }}
+			SWE = {annex_country = { target = MEX transfer_troops = no }}
+			SWE = {annex_country = { target = JAP transfer_troops = no }}
+			SWE = {annex_country = { target = MAN transfer_troops = no }}
+			SWE = {annex_country = { target = SIA transfer_troops = no }}
+			SWE = {annex_country = { target = CHI transfer_troops = no }}
+}}
+
+
+
+}}
+
+
+
+
+# SWE = {annex_country = { target = GER transfer_troops = no }}
