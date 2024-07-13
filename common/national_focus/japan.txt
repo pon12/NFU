@@ -982,60 +982,6 @@ focus_tree = {
 			}
 		}
 	}
-
-	focus = {
-		id = JAP_armored_divisions_MAN
-		icon = GFX_FOCUS_CHU_LAND_DOCTRIN_MECHANIZE
-		prerequisite = { focus = JAP_supremacy_of_technology }
-		x = 1
-		y = 2
-		relative_position_id = JAP_supremacy_of_technology
-
-		cost = 5
-
-		allow_branch = {
-			716 = {
-				NOT = { is_fully_controlled_by = MAN}
-			}	
-		}
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			date > 1938.9.1
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		search_filters = { FOCUS_FILTER_RESEARCH }
-		completion_reward = {
-			add_tech_bonus = {
-				name = JAP_armored_divisions
-				bonus = 5.0
-				ahead_reduction = 2 
-				uses = 2
-				technology = improved_medium_tank_chassis
-				technology = improved_heavy_tank_chassis
-				technology = amphibious_drive
-			}
-			add_tech_bonus = {
-				name = JAP_armored_divisions
-				bonus = 5.0
-				ahead_reduction = 2 
-				uses = 2
-				technology = mechanised_infantry
-				technology = amphibious_mechanized_infantry
-			}
-		}
-	}
-
 	focus = {
 		id = JAP_army_expansion
 		icon = GFX_R56_GOAL_JAP_SAKURA_INFANTRY
