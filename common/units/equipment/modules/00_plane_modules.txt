@@ -1286,7 +1286,7 @@ equipment_modules = {
 		add_stats = {
 			air_defence = 4
 			build_cost_ic = 1.5
-			weight = 2
+			weight = 1
 		}
 
 		multiply_stats = {
