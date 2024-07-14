@@ -159,7 +159,28 @@ is_ai = no
 	autonomous_state = autonomy_dominion
 	freedom_level = 0.2	
 }}
+
+
 			add_ideas = vittorio_emanuele_king_of_albania2
+			set_cosmetic_tag = I_YUG
+			set_politics = {
+	ruling_party = fascism
+	elections_allowed = no
+}
+			create_country_leader = {
+	name = "Prince Adalberto"
+	desc = "POLITICS_PETER_II_DESC"
+	picture = "GFX_portrait_ITA_prince_adalberto"
+	expire = "1965.1.1"
+	ideology = nazism
+	traits = { Italien_Overlord }
+}
+set_party_name = {
+			
+				ideology = fascism
+				long_name = ITA_FL
+				name = ITA_F
+			}
 		}
 		
 	}
@@ -201,6 +222,26 @@ is_ai = no
 	freedom_level = 0.2	
 }}
 			add_ideas = general_staff2
+			
+			set_cosmetic_tag = G_YUG
+			set_politics = {
+	ruling_party = fascism
+	elections_allowed = no
+}
+			create_country_leader = {
+	name = "Gotthard Heinrici"
+	desc = "POLITICS_PETER_II_DESC"
+	picture = "GFX_portrait_GER_gotthard_heinrici"
+	expire = "1965.1.1"
+	ideology = nazism
+	traits = { German_Overlord }
+}
+set_party_name = {
+			
+				ideology = fascism
+				long_name = GER_FL
+				name = GER_F
+			}
 		}
 	}
 

@@ -19,6 +19,30 @@
  GYUG_fascism: "Greater Yugoslavia"
  GYUG_fascism_ADJ: "Greater Yugoslavia"
  GYUG_fascism_DEF: "Greater Yugoslavia"
+ GYUG_neutrality: "Greater Yugoslavia"
+ GYUG_neutralityADJ: "Greater Yugoslavia"
+ GYUG_neutrality_DEF: "Greater Yugoslavia"
+ 
+ I_YUG_fascism: "Yugoslavian Protectorate"
+ I_YUG_fascism_ADJ: "Yugoslavian Protectorate"
+ I_YUG_fascism_DEF: "Yugoslavian Protectorate"
+ I_YUG_neutrality: "Yugoslavian Protectorate"
+ I_YUG_neutrality_ADJ: "Yugoslavian Protectorate"
+ I_YUG_neutrality_DEF: "Yugoslavian Protectorate"
+ 
+ G_YUG_fascism: "Reichskommisariat Yugoslavien"
+ G_YUG_fascism_ADJ: "Reichskommisariat Yugoslavien"
+ G_YUG_fascism_DEF: "Reichskommisariat Yugoslavien"
+ G_YUG_neutrality: "Reichskommisariat Yugoslavien"
+ G_YUG_neutrality_ADJ: "Reichskommisariat Yugoslavien"
+ G_YUG_neutrality_DEF: "Reichskommisariat Yugoslavien"
+ 
+ Italien_Overlord:0 "Italien Prince"
+ ITA_FL:0 "Italien Loyalists"
+ ITA_F:0 "Italien Loyalists"
+ German_Overlord:0 "Reichskommisar"
+ GER_FL:0 "German Loyalists"
+ GER_F:0 "German Loyalists"
  
  YUG_Militear_desc_tt:0 "You can Later ROnly! Complete YDevelope Slovenian Industry! ! \n\n"
  YUG_Militear2_desc_tt:0 "You can Later ROnly! Complete YImprove Light Industry! ! \n\n"
@@ -27,8 +51,8 @@
  YUG_idea_axis_capital2:0 "Axis Investments"
  general_staff2:0 "General Staff"
  Yugoslavian_Army:0 "Yugoslavian Army"
- vittorio_emanuele_king_of_albania2 :0 "King Emanuele"
- #CANADA
+
+
  CAN_IND1:0 "Industrial Focus"
  CAN_Develope_Ontario:0 "Develope Ontario"
  CAN_Develope_Quebec:0 "Develope Quebec"
