@@ -124,7 +124,7 @@ add_building_construction = {
 	focus = {
 		id = SOV_heavy_industry
 
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_goal_construction_of_communism_boris
 		x = 2
 		y = 0
 		relative_position_id = SOV_infrastructure_effort_nsb
@@ -340,7 +340,7 @@ add_building_construction = {
 	focus = {
 		id = SOV_improve_railway_network
 
-		icon = GFX_goal_generic_construct_infrastructure
+		icon = GFX_goal_train2_captainluck
 		prerequisite = { focus = SOV_finish_the_five_year_plan }
 		x = -2
 		y = 1
@@ -406,7 +406,7 @@ add_building_construction = {
 	focus = {
 		id = SOV_third_five_year_plan
 
-		icon = GFX_focus_generic_industry_2
+		icon = GFX_goal_five_year_plan_captainluck
 		prerequisite = { focus = SOV_finish_the_five_year_plan }
 		x = 0
 		y = 1
@@ -1973,7 +1973,7 @@ add_building_construction = {
 	focus = {
 		id = SOV_superior_war_machines
 
-		icon = GFX_focus_generic_tank_production
+		icon = GFX_goal_superior_war_machine_captainluck
 		prerequisite = { focus = SOV_pc_of_mechanical_engineering }
 		x = -1
 		y = 1
@@ -2106,7 +2106,7 @@ add_building_construction = {
 	focus = {
 		id = SOV_the_means_to_wage_war
 
-		icon = GFX_goal_generic_military_sphere
+		icon = GFX_goal_means_to_wage_war_captainluck
 		prerequisite = { focus = SOV_pc_of_mechanical_engineering }
 		x = 1
 		y = 1
@@ -2408,7 +2408,7 @@ add_building_construction = {
 focus = {
 		id = SOV_development_of_tankograd
 
-		icon = GFX_goal_generic_army_tanks
+		icon = GFX_goal_develop_tankograd_captainluck
 		prerequisite = { focus = SOV_the_means_to_wage_war }
 		x = 1
 		y = 1
@@ -3637,7 +3637,7 @@ focus = {
 
 	focus = {
 		id = SOV_desperate_measures
-		icon = GFX_goal_generic_more_territorial_claims
+		icon = GFX_goal_positive_heroism_captainluck
 		prerequisite = { focus = SOV_strengthen_the_mobilization_plan }
 		x = 3
 		y = 2
@@ -4031,7 +4031,7 @@ focus = {
 
 	focus = {
 		id = SOV_the_centre
-		icon = GFX_focus_fra_loyalty_stalin
+		icon = GFX_goal_stalin_bust_captainluck
 		prerequisite = { focus = SOV_the_path_of_marxism_leninism }
 		x = -4
 		y = 1
@@ -5135,7 +5135,7 @@ focus = {
 
 	focus = {
 		id = SOV_nkvd_primacy
-		icon = GFX_goal_generic_military_deal
+		icon = GFX_goal_nkvd_symbol_captainluck
 		prerequisite = { focus = SOV_addressing_internal_affairs }
 		x = -2
 		y = 1
@@ -5348,7 +5348,7 @@ focus = {
 
 	focus = {
 		id = SOV_the_komsomol
-		icon = GFX_focus_generic_join_comintern
+		icon = GFX_goal_komsomol_sheep
 		prerequisite = { focus = SOV_expand_the_agitprop }
 		x = 2
 		y = 1
@@ -5411,7 +5411,7 @@ focus = {
 
 	focus = {
 		id = SOV_the_comintern
-		icon = GFX_goal_support_communism
+		icon = GFX_goal_the_comintern_captainluck
 		prerequisite = { focus = SOV_the_path_of_marxism_leninism }
 		x = 6
 		y = 0
@@ -5463,7 +5463,7 @@ focus = {
 
 	focus = {
 		id = SOV_claims_in_baltic
-		icon = GFX_focus_SOV_baltic_security
+		icon = GFX_goal_baltic_security_trun
 		prerequisite = { focus = SOV_the_comintern }
 		x = 0
 		y = 1
@@ -5482,13 +5482,13 @@ focus = {
 		search_filters = {FOCUS_FILTER_ANNEXATION}
 
 		completion_reward = {
-			custom_effect_tooltip = SOV_claims_in_balitc.tt
+			custom_effect_tooltip = SOV_claims_in_balitc2.tt
+			add_political_power = -75
+			add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 10000 }
+			add_named_threat = { threat = 1 name = SOV_claims_in_baltic }
 			hidden_effect = {
 				news_event = { id = news.199 days = 1}
 				annex_country = { target = LIT  }
-				add_named_threat = { threat = 1 name = SOV_claims_in_baltic }
-				add_political_power = -75
-				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 60000 }
 			}
 		}
 	}
@@ -5506,11 +5506,12 @@ focus = {
 		cost = 1
 
 		completion_reward = {
-			custom_effect_tooltip = SOV_Bessarabia.tt
-			hidden_effect = { 
-				SOV = { transfer_state = 78 }
+			custom_effect_tooltip = SOV_Bessarabia2.tt
+			SOV = { transfer_state = 78 }
 				SOV = { transfer_state = 766 }
 				SOV = { transfer_state = 80 }
+			hidden_effect = { 
+
 				78 = {
 					remove_dynamic_modifier = { modifier = ROM_no_building_slots }
 				}
