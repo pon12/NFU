@@ -4,6 +4,23 @@
 
 ####### NO STEP BACK! #######
 
+SOV_winter_war_d = {
+
+	priority = 102
+
+	icon = SOV_paranoia
+
+	allowed = {
+		original_tag = SOV
+	}
+
+	visible = {
+		
+	}
+
+	visible_when_empty = no
+}
+
 SOV_paranoia_system = {
 
 	priority = 101

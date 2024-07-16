@@ -55,7 +55,17 @@
  Mongolia_labor:0 "Exploit Mongolian Labour"
  SOV_claims_in_balitc2.tt:0 "\nRAnnex! the YUnited Baltics! ! \n\n"
  SOV_Bessarabia2.tt:0 "\nRAnnex! YBessarabia! from LRomania! ! \n\n"
-
+ SOV_claims_in_finnland.tt:0 "YUnlocks! GDecisions! for the CWinter War! !\n\n"
+ SOV_claims_in_finnland2.tt:0 "\nRIf this YFocus! isnt Completet until! Y01.06.1940! CFollowing Effects! will be applied: \n R-20! YStability! \n R-20! YWar Support!"
+ SOV_Winter_War:0 "CWinter War!"
+ SOV_winter_war_d:0 "CWinter War!"
+ SOV_finnland_lose.tt:0 "RYou lose the !CWinter War! !"
+ SOV_finnland_win.tt:0 "GYou Win the !CWinter War! !"
+ SOV_WW_udssr_Victory:0 "GForce Peace to !CFinnland!"
+ SOV_WW_udssr_Surrender:0 "RSurrender to !CFinnland!"
+ Winter_War_Mission:0 "R Countdown of the !CWinter War!"
+ Winter_War_Timeout:0 "R Start of the !CWinter War!"
+ 
  CAN_IND1:0 "Industrial Focus"
  CAN_Develope_Ontario:0 "Develope Ontario"
  CAN_Develope_Quebec:0 "Develope Quebec"
