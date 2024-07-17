@@ -300,12 +300,12 @@ characters = {
 		}
 
 		corps_commander = {
-			traits = { career_officer cavalry_officer politically_connected }
+			traits = { trickster infantry_officer war_hero hill_fighter fortress_buster engineer ranger infantry_leader }
 			skill = 3
-			attack_skill = 3
-			defense_skill = 2
-			planning_skill = 2
-			logistics_skill = 3
+			attack_skill = 5
+			defense_skill = 4
+			planning_skill = 5
+			logistics_skill = 5
 			legacy_id = 404
 		}
 	}
