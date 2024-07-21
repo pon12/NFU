@@ -125,8 +125,6 @@ ideas = {
 				army_core_defence_factor = 0.1
 				local_building_slots_factor = 0.3
 			}
-			
-			
 }
 YUG_united_yugoslavia_2 = {
 			picture = generic_production_bonus

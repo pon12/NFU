@@ -2458,7 +2458,7 @@ focus = {
 					check_variable = { temp_targets_index = 10 compare = less_than }
 				}
 				hidden_effect = {
-					random_owned_state = {
+					every_owned_state = {
 						limit = {
 							is_on_continent = asia
 							arms_factory > 2
