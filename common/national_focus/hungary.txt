@@ -24,7 +24,189 @@ focus_tree = {
 
 	continuous_focus_position = { x = 50 y = 1600 }
 
+focus = {
+		id = HUN_balanced_budget
+		icon = GFX_goal_generic_consumer_goods
+		mutually_exclusive = { focus = HUN_economic_intervention }
+		x = 2
+		y = 0
 
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = HUN_strengthen_the_monarchists
+		icon = GFX_focus_generic_support_the_left_right
+		prerequisite = { focus = HUN_balanced_budget }
+		x = 0
+		y = 1
+		relative_position_id = HUN_balanced_budget
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 80
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_ideas = HUN_hungarian_monarchy
+			set_party_name = { ideology = neutrality long_name = HUN_legitimists_party_long name = HUN_legitimists_party }
+		}
+	}
+
+	focus = {
+		id = HUN_elect_a_king
+		icon = GFX_focus_hun_elect_a_king
+		prerequisite = { focus = HUN_strengthen_the_monarchists }
+		x = 0
+		y = 2
+		relative_position_id = HUN_balanced_budget
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 80
+		}
+
+		available = {
+			neutrality > 0.3
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = HUN_hungarian_monarchy
+				add_idea = HUN_hungarian_monarchy_2
+			}
+			add_popularity = { ideology = neutrality popularity = 0.10 }
+		}
+	}
+focus = {
+		id = HUN_mobelize_the_Nation
+		icon = GFX_goal_molotov_ribbentrop_pact
+		prerequisite = { focus = HUN_renounce_the_treaty_of_trianon }
+		x = -2
+		y = 1
+		relative_position_id = HUN_renounce_the_treaty_of_trianon
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 20
+		}
+
+		available = {
+			OR = {
+				has_government = fascism
+				has_government = neutrality				
+			}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+
+			
+				add_war_support = 0.05
+				add_ideas = {war_economy}
+							
+
+					
+			
+		}
+	}
+	focus = {
+		id = HUN_mobelize_the_Nation2
+		icon = GFX_goal_molotov_ribbentrop_pact
+		prerequisite = { focus = HUN_mobelize_the_Nation }
+		x = -2
+		y = 2
+		relative_position_id = HUN_renounce_the_treaty_of_trianon
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 20
+		}
+
+		available = {
+			OR = {
+				has_government = fascism
+				has_government = neutrality				
+			}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+
+			
+				add_war_support = 0.05
+				add_ideas = {limited_conscription}
+							
+
+					
+			
+		}
+	}
 	############################
 	## ECONOMIC INTERVENTION ###
 	############################
@@ -32,7 +214,8 @@ focus_tree = {
 	focus = {
 		id = HUN_economic_intervention
 		icon = GFX_FOCUS_HORTHY_SUCCESSION
-		x = 3
+		mutually_exclusive = { focus = HUN_balanced_budget }
+		x = 7
 		y = 0
 
 		cost = 10
@@ -73,15 +256,19 @@ focus_tree = {
 			add_timed_idea = { idea = HUN_strengthen_fascists days = 720 }
 			add_popularity = { ideology = fascism popularity = 0.1 }
 			set_party_name = { ideology = fascism long_name = HUN_arrow_cross_party_long name = HUN_arrow_cross_party }
+			set_politics = {
+						ruling_party = fascism
+						elections_allowed = no
+					}
 		}
 	}
 
 	focus = {
 		id = HUN_renounce_the_treaty_of_trianon
 		icon = GFX_focus_renounce_the_treaty_of_trianon
-		prerequisite = { focus = HUN_strengthen_fascists  }
-		x = 0
-		y = 1
+		prerequisite = { focus = HUN_strengthen_fascists focus = HUN_elect_a_king }
+		x = -2
+		y = 2
 		relative_position_id = HUN_strengthen_fascists
 
 		cost = 10
@@ -90,6 +277,7 @@ focus_tree = {
 			OR = {
 				has_government = fascism
 				fascism > 0.4
+				neutrality > 0.4
 			}
 		}
 
@@ -128,12 +316,7 @@ focus_tree = {
 				limit = { has_idea = HUN_treaty_of_triannon }
 				remove_ideas = HUN_treaty_of_triannon
 			}
-			hidden_effect = {
-					set_politics = {
-						ruling_party = fascism
-						elections_allowed = no
-					}
-				}
+			
 			}	
 	}
 
@@ -141,7 +324,7 @@ focus_tree = {
 		id = HUN_joint_aluminum_mining_company
 		icon = GFX_goal_generic_construction2
 		prerequisite = { focus = HUN_renounce_the_treaty_of_trianon }
-		x = 1
+		x = 2
 		y = 1
 		relative_position_id = HUN_renounce_the_treaty_of_trianon
 
@@ -161,16 +344,60 @@ focus_tree = {
 			43 = {
 				add_resource = {
 					type = aluminium
-					amount = 16
+					amount = 27
 				}
 			}
+		}
+	}
+	focus = {
+		id = HUN_devleope_slovakia
+		icon = GFX_goal_generic_construction2
+		prerequisite = { focus = HUN_joint_aluminum_mining_company }
+		x = 2
+		y = 2
+		relative_position_id = HUN_renounce_the_treaty_of_trianon
+
+		cost = 10
+
+		available = {
+			ROOT = { has_full_control_of_state = 70 }
+			ROOT = { has_full_control_of_state = 71 }
+			ROOT = { has_full_control_of_state = 73 }
+			ROOT = { has_full_control_of_state = 664 }
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			70 = {
+				add_extra_state_shared_building_slots = 4
+				add_compliance = 10
+				add_resistance = -20
+				
+			}
+			71 = {
+				add_extra_state_shared_building_slots = 4
+				add_compliance = 10
+				add_resistance = -20
+			}
+			73 = {
+				add_extra_state_shared_building_slots = 5
+			}
+			664 = {
+				add_extra_state_shared_building_slots = 5
+			}
+			add_state_core = 73
 		}
 	}
 	focus = {
 		id = HUN_reaffirm_territorial_claims
 		icon = GFX_FOCUS_HUN_NATIONALISM
 		prerequisite = { focus = HUN_renounce_the_treaty_of_trianon }
-		x = -1
+		x = 0
 		y = 1
 		relative_position_id = HUN_renounce_the_treaty_of_trianon
 
@@ -237,7 +464,7 @@ focus_tree = {
 	focus = {
 		id = HUN_industrial_revitalization
 		icon = GFX_goal_generic_construction
-		x = 7
+		x = 15
 		y = 0
 
 		cost = 10
@@ -732,7 +959,7 @@ focus_tree = {
 	focus = {
 		id = HUN_secret_rearmament
 		icon = GFX_focus_secret_rearmament
-		x = 16
+		x = 25
 		y = 0
 
 		cost = 5
