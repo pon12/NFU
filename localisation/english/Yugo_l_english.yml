@@ -52,6 +52,7 @@
  general_staff2:0 "General Staff"
  Yugoslavian_Army:0 "Yugoslavian Army"
 
+#Soviet
  Mongolia_labor:0 "Exploit Mongolian Labour"
  SOV_claims_in_balitc2.tt:0 "\nRAnnex! the YUnited Baltics! ! \n\n"
  SOV_Bessarabia2.tt:0 "\nRAnnex! YBessarabia! from LRomania! ! \n\n"
@@ -66,6 +67,9 @@
  Winter_War_Mission:0 "R Countdown of the !CWinter War!"
  Winter_War_Timeout:0 "R Start of the !CWinter War!"
  
+#No Asia
+ENG_No_Asia_Test:0 "No Asia"
+ #Canada
  CAN_IND1:0 "Industrial Focus"
  CAN_Develope_Ontario:0 "Develope Ontario"
  CAN_Develope_Quebec:0 "Develope Quebec"

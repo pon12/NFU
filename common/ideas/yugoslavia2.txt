@@ -149,6 +149,25 @@ YUG_united_yugoslavia_2 = {
 		   military_factory_donations = 3
 			}
 }
+
+ENG_No_Asia_Test = {
+			picture = generic_production_bonus
+			removal_cost = -1
+			
+			allowed = {
+				original_tag = ENG
+			}
+
+			
+			modifier = {
+			army_core_attack_factor = 0.15
+			army_core_defence_factor = 0.15
+			surrender_limit = 0.2
+			industrial_factory_donations = 10
+		   	military_factory_donations = 5
+			}
+}
+
 YUG_united_yugoslavia_3 = {
 			picture = generic_production_bonus
 			removal_cost = -1
