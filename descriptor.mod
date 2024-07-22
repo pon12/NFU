@@ -11,4 +11,4 @@ tags={
 	"Ideologies"
 }
 name="NFUP"
-supported_version="1.14.5"
+supported_version="1.14.7"
