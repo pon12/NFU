@@ -111,20 +111,7 @@ bookmarks = {
 
 
 		# minors from DLC ####
-		"RAJ"={
-			minor = yes
-			history = "RAJ_GATHERING_STORM_DESC"
-			ideology = neutrality
-			ideas = {
-				RAJ_agrarian_society
-				RAJ_princely_states
-			}
-			focuses = {
-				RAJ_indian_gurkhas
-				RAJ_strengthen_ties_with_british_investors
-				RAJ_indian_national_congress
-			}
-		}
+
 		"CAN"={
 			minor = yes
 			history = "CAN_GATHERING_STORM_DESC"
@@ -316,18 +303,7 @@ bookmarks = {
 				FIN_mining
 			}			
 		}
-		"EFR"={
-			minor = yes
-			history = ""
-			ideology = fascism
-			ideas = {
-			}
-			focuses = {
-				VIC_emergency_powers_to_petain
-				VIC_anti_bolshevist_volunteers
-				VIC_a_nation_reborn
-			}						
-		}
+
 		"YUG"={
 			minor = yes
 			history = ""
