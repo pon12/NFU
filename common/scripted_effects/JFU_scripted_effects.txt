@@ -485,6 +485,12 @@ JFU_vichy_france = {
 				}
 				transfer_state = 695
 				transfer_state = 669
+				transfer_state = 688
+				transfer_state = 738
+				transfer_state = 667
+				transfer_state = 335
+				transfer_state = 334
+				transfer_state = 672
 			} 
 			every_state = {
 				limit = {
