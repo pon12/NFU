@@ -643,9 +643,9 @@ JFU_vichy_france_2 = {
 			transfer_state = 888
 		}
 		FRA_africa_spawn_ins = yes 
-		add_equipment_to_stockpile = { type = medium_tank_chassis_2 amount = 500 producer = FRA variant_name = "AFRICA TANKs" }
-		add_equipment_to_stockpile = { type = medium_tank_flame_chassis_1 amount = 200 producer = FRA variant_name = "AFRICA FLAME TANKs" }
-		add_equipment_to_stockpile = { type = light_tank_chassis_1 amount = 300 producer = FRA variant_name = "AFRICA LIGHT TANKs" }
+		add_equipment_to_stockpile = { type = medium_tank_chassis_2 amount = 300 producer = FRA variant_name = "AFRICA TANKs" }
+		add_equipment_to_stockpile = { type = medium_tank_flame_chassis_1 amount = 100 producer = FRA variant_name = "AFRICA FLAME TANKs" }
+		add_equipment_to_stockpile = { type = light_tank_chassis_1 amount = 200 producer = FRA variant_name = "AFRICA LIGHT TANKs" }
 	}
 	if = { 
 		limit = {
