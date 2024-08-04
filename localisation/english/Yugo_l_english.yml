@@ -87,6 +87,8 @@ ENG_No_Asia_Test:0 "No Asia"
  CAN_Mills_Columbia:0 "Military Investment in Columbia"
  CAN_Resources_Ontario:0 "Mine Ressources in Ontario"
  CAN_Resources_Columbia:0 "Mine Ressources in Columbia"
+ CAN_Industrie_Idee:0 "Civil Investment"
+ CAN_Industrie2_Idee:0 "Military Investment"
  #FRA FIX
  FRA_the_maquis2:0 "The Maquis"
  FRA_the_civil_and_military_organization2:0 "The Civil and Military Organizations"
