@@ -2,6 +2,67 @@ ideas = {
 
 	country = {
 
+	HUN_ita_trade_deal = {
+
+			picture = generic_flexible_foreign_policy
+
+			targeted_modifier = {
+				tag = ITA
+				trade_cost_for_target_factor = -0.2
+			}
+			modifier = {
+				industrial_factory_donations = 1
+		   	military_factory_donations = 1
+			}
+		}
+		HUN_interior_minestry = {
+
+			picture = generic_flexible_foreign_policy
+
+			
+			modifier = {
+				economy_cost_factor = -0.15
+				trade_laws_cost_factor = -0.15
+				mobilization_laws_cost_factor = -0.15
+				political_advisor_cost_factor = -0.10
+			}
+		}
+	HUN_imp_guard = {
+			
+			picture = NORDIC_army_monarchist
+
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				war_support_factor = 0.05
+				conscription_factor = 0.10
+				conscription = 0.01
+			}
+	}
+
+	HUN_anti_bolshevism = {
+			picture = generic_manpower_bonus
+			allowed = {
+				original_tag = HUN
+			}
+
+			removal_cost = -1
+			
+			targeted_modifier = {
+				tag = SOV
+				attack_bonus_against = 0.1
+			}
+			modifier = {conscription_factor = -0.2}
+		}
 
 	CAN_Industrie_Idee = {
 			

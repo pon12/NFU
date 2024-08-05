@@ -386,7 +386,7 @@ leader_traits = {
 
 	constitutional_monarch = {
 		random = no
-		stability_weekly = 0.01
+		stability_weekly = 0.001
 		political_power_gain = 0.1
 		ai_will_do = {
 			factor = 1

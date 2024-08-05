@@ -28,7 +28,7 @@ focus = {
 		id = HUN_balanced_budget
 		icon = GFX_goal_generic_consumer_goods
 		mutually_exclusive = { focus = HUN_economic_intervention }
-		x = 2
+		x = 1
 		y = 0
 
 		cost = 10
@@ -123,6 +123,197 @@ focus = {
 			add_popularity = { ideology = neutrality popularity = 0.10 }
 		}
 	}
+
+	focus = {
+		id = HUN_end_the_regency
+		icon = GFX_focus_generic_monarchy_1
+		prerequisite = { focus = HUN_elect_a_king }
+		x = 0
+		y = 1
+		relative_position_id = HUN_elect_a_king
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 80
+		}
+
+		available = {
+			neutrality > 0.6
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			retire_country_leader = yes
+			create_country_leader = {
+				name = "Otto von Habsburg"
+				desc = "POLITICS_OTTO_VON_HABSBURG_DESC"
+				picture = GFX_Portrait_hungary_otto_von_hapsburg
+				expire = "1965.1.1"
+				ideology = despotism
+				traits = {
+					constitutional_monarch
+				}
+			}
+			
+			
+		}
+	}
+	focus = {
+		id = HUN_romanian_trade
+		icon = GFX_focus_invite_romania
+		prerequisite = { focus = HUN_end_the_regency }
+		x = -1
+		y = 1
+		relative_position_id = HUN_end_the_regency
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			ROM = {
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+						is_core_of = ROM
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = HUN_bulgarian_trade
+		icon = GFX_focus_generic_befriend_bulgaria
+		prerequisite = { focus = HUN_end_the_regency }
+		x = 1
+		y = 1
+		relative_position_id = HUN_end_the_regency
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			BUL = {
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+						is_core_of = BUL
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = HUN_suffrage_reforms
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = HUN_romanian_trade focus = HUN_bulgarian_trade }
+		x = 0
+		y = 1
+		relative_position_id = HUN_romanian_trade
+
+		cost = 5
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = 0.10
+			add_popularity = { ideology = neutrality popularity = 0.10 }
+		}
+	}
+	focus = {
+		id = HUN_form_the_emp_guard
+		icon = GFX_focus_generic_manpower
+		prerequisite = { focus = HUN_romanian_trade focus = HUN_bulgarian_trade }
+		x = 2
+		y = 1
+		relative_position_id = HUN_romanian_trade
+
+		cost = 5
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = {HUN_imp_guard}
+		}
+	}
 focus = {
 		id = HUN_mobelize_the_Nation
 		icon = GFX_goal_molotov_ribbentrop_pact
@@ -131,7 +322,7 @@ focus = {
 		y = 1
 		relative_position_id = HUN_renounce_the_treaty_of_trianon
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 20
@@ -145,7 +336,6 @@ focus = {
 		}
 
 		bypass = {
-
 		}
 
 		cancel_if_invalid = yes
@@ -173,7 +363,7 @@ focus = {
 		y = 2
 		relative_position_id = HUN_renounce_the_treaty_of_trianon
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 20
@@ -215,7 +405,7 @@ focus = {
 		id = HUN_economic_intervention
 		icon = GFX_FOCUS_HORTHY_SUCCESSION
 		mutually_exclusive = { focus = HUN_balanced_budget }
-		x = 7
+		x = 11
 		y = 0
 
 		cost = 10
@@ -241,7 +431,7 @@ focus = {
 		icon = GFX_goal_support_fascism
 		prerequisite = { focus = HUN_economic_intervention }
 		x = 0
-		y = 1
+		y = 2
 		relative_position_id = HUN_economic_intervention
 
 		cost = 10
@@ -263,12 +453,167 @@ focus = {
 		}
 	}
 
+
+
+
+
+	focus = {
+		id = HUN_status_quo
+		icon = GFX_goal_generic_neutrality_focus
+		prerequisite = { focus = HUN_strengthen_fascists }
+		x = 0
+		y = 1
+		relative_position_id = HUN_strengthen_fascists
+		mutually_exclusive = { focus = HUN_empower_the_arrow }
+		mutually_exclusive = { focus = HUN_strengthen_the_monarchists }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 80
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+				add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
+			add_stability = 0.05
+			add_political_power = 100
+		}
+	}
+	
+	
+	
+	focus = {
+		id = HUN_expand_the_regency_powers
+		icon = GFX_focus_rom_handle_king
+		prerequisite = { focus = HUN_status_quo }
+		x = -1
+		y = 1
+		relative_position_id = HUN_status_quo
+
+		cost = 5
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+			add_country_leader_trait = crown_regent
+		}
+	}
+	
+	focus = {
+		id = HUN_crusade_against_bolshevism
+		icon = GFX_focus_attack_soviet
+		prerequisite = { focus = HUN_expand_the_regency_powers focus = HUN_befriend_italy}
+		
+		x = 0
+		y = 1
+		relative_position_id = HUN_expand_the_regency_powers
+		cost = 5
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = HUN_anti_bolshevism
+		}
+	}
+	
+	
+	
+	
+	
+	focus = {
+		id = HUN_befriend_italy
+		icon = GFX_focus_befriend_italy
+		prerequisite = { focus = HUN_status_quo }
+		x = 1
+		y = 1
+		relative_position_id = HUN_status_quo
+
+		cost = 5
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
+			add_offsite_building = { type = industrial_complex level = 1 }
+			ITA = { add_offsite_building = { type = industrial_complex level = 1 } }
+		}
+	}
+	
+	focus = {
+		id = HUN_italian_trade_deal
+		icon = GFX_focus_mex_privatisation
+		prerequisite = { focus = HUN_expand_the_regency_powers focus = HUN_befriend_italy}
+	
+		x = 0
+		y = 1
+		relative_position_id = HUN_befriend_italy
+
+		cost = 5
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+			add_ideas = HUN_ita_trade_deal
+		}
+	}
+focus = {
+		id = HUN_infiltrate_the_interior_ministry
+		icon = GFX_focus_prc_infiltration
+		prerequisite = { focus = HUN_balanced_budget focus = HUN_economic_intervention}
+		x = 5
+		y = 1
+		relative_position_id = HUN_balanced_budget
+		cost = 5
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 50
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.05
+			}
+			add_ideas = {HUN_interior_minestry}
+		}
+	}
+
 	focus = {
 		id = HUN_renounce_the_treaty_of_trianon
 		icon = GFX_focus_renounce_the_treaty_of_trianon
 		prerequisite = { focus = HUN_strengthen_fascists focus = HUN_elect_a_king }
-		x = -2
-		y = 2
+		x = -5
+		y = 1
 		relative_position_id = HUN_strengthen_fascists
 
 		cost = 10
@@ -357,7 +702,7 @@ focus = {
 		y = 2
 		relative_position_id = HUN_renounce_the_treaty_of_trianon
 
-		cost = 10
+		cost = 5
 
 		available = {
 			ROOT = { has_full_control_of_state = 70 }
@@ -401,7 +746,7 @@ focus = {
 		y = 1
 		relative_position_id = HUN_renounce_the_treaty_of_trianon
 
-		cost = 10
+		cost = 5
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -423,9 +768,7 @@ focus = {
 		x = 0
 		y = 1
 		relative_position_id = HUN_reaffirm_territorial_claims
-
-		cost = 10
-
+		cost = 5
 		ai_will_do = {
 			factor = 80
 		}
@@ -464,10 +807,10 @@ focus = {
 	focus = {
 		id = HUN_industrial_revitalization
 		icon = GFX_goal_generic_construction
-		x = 15
+		x = 16
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 90
@@ -513,7 +856,7 @@ focus = {
 		y = 1
 		relative_position_id = HUN_industrial_revitalization
 
-		cost = 10
+		cost = 5
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
