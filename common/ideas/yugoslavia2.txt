@@ -48,6 +48,29 @@ ideas = {
 				conscription = 0.01
 			}
 	}
+	HUN_imp_guard2 = {
+			
+			picture = NORDIC_army_monarchist
+
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				war_support_factor = 0.05
+				conscription_factor = 0.10
+				conscription = 0.01
+				special_forces_attack_factor = 0.12
+				special_forces_defence_factor = 0.12
+			}
+	}
 
 	HUN_anti_bolshevism = {
 			picture = generic_manpower_bonus
@@ -59,9 +82,14 @@ ideas = {
 			
 			targeted_modifier = {
 				tag = SOV
-				attack_bonus_against = 0.1
+				attack_bonus_against = 0.05
 			}
-			modifier = {conscription_factor = -0.2}
+			modifier = {
+				army_armor_attack_factor = 0.05
+				army_armor_defence_factor = 0.05
+				army_armor_speed_factor = 0.05
+				conscription_factor = -0.5
+}
 		}
 
 	CAN_Industrie_Idee = {

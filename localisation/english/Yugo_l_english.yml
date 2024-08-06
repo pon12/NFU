@@ -116,6 +116,7 @@ ENG_No_Asia_Test:0 "No Asia"
 
 #HUN
 HUN_imp_guard:0 "Imperial Guard"
+HUN_imp_guard2:0 "Imperial Guard"
 HUN_form_the_emp_guard:0 "Form the Imperial Guard"
 HUN_suffrage_reforms:0 "Suffrage Reforms"
 HUN_bulgarian_trade:0 "Bulgarian Trade"
@@ -130,3 +131,4 @@ HUN_italian_trade_deal:0 "Italien Trade Deal"
 HUN_ita_trade_deal:0 "Italien Trade Deal"
 HUN_infiltrate_the_interior_ministry:0 "Interior Ministry"
 HUN_interior_minestry:0 "Interior Ministry"
+HUN_form_the_emp_guard2:0 "Speciallize the Imperial Guard"
